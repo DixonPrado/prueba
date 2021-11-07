@@ -1,0 +1,86 @@
+/**
+* $JA#COPYRIGHT$
+*/
+
+//
+// OFF-CANVAS CONTENT STYLES
+// -------------------------------------
+// Extend style in base
+// --------------------
+@import "../../../plugins/system/t4/themes/base/scss/_offcanvas";
+
+// Toggle button
+// -------------
+.t4-offcanvas-toggle,
+.navbar-toggler {
+  display: block;
+  float: right;
+  height: 22px;
+  padding: 0;
+  position: relative;
+  transition: all 0.35s;
+  width: 22px;
+
+  i {
+    font-size: 22px;
+    color: $white;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.t4-offcanvas {
+
+  // Off Canvas Header
+  // -----------------------------------
+  .t4-off-canvas-header {
+    h3 {
+      color: $t4-off-canvas-header-text-color;
+    }
+
+    .close {
+      color: #fff;
+      background: rgba(0,0,0,0.5);
+      line-height: 32px;
+      text-shadow: none;
+
+      span {
+        display: inline-block;
+        line-height: 1;
+        vertical-align: top;
+      }
+    }
+  }
+
+  // Off Canvas Body
+  // -----------------------------------  
+  .t4-off-canvas-body {
+
+    // Nav bar
+    .navbar {
+      .nav-pills .nav-link.active, 
+      .nav-pills .show > .nav-link {
+        background: none;
+        color: $t4-off-canvas-link-hover-color;
+      }
+ 
+      .nav-link,
+      .separator {
+        color: $t4-off-canvas-link-color;
+        
+        &:hover, &:focus, &:active {
+        }
+      }
+
+      // Dropdown menu
+      .dropdown-menu {
+
+        .dropdown-item,
+        .nav-link {
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,203 @@
+/**
+* $JA#COPYRIGHT$
+*/
+
+
+// Navbar toggle
+// -----------------------------------
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+
+// 
+// Main Navigation
+// -----------------------------------
+.t4-navbar {
+  @include clearfix();
+
+  // Dropdown
+  .dropdown-item {
+    &.dropdown-toggle {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        right: $spacer;
+        top: 50%;
+        margin-top: -2px;
+      }
+    }
+  }
+
+  .nav-item {
+    position: relative;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  #t4-navbar-collapse {
+    display: block !important;
+  }
+
+  .navbar-expand-lg #t4-navbar-collapse {
+    display: flex !important;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  // .navbar-expand-lg { 
+  //   display: none;
+  // }
+
+  .navbar-expand .navbar-toggler {
+    display: inline-block;
+  }
+
+  .t4-navbar {
+    > .container {
+      display: block;
+    }
+
+    .navbar-nav {
+      display: block;
+      margin-top: $spacer;
+    } 
+
+    .nav-item {
+      display: block;
+    }
+  }
+
+  #t4-navbar-collapse {
+    &.show {
+      display: block !important;
+    }
+
+    &.collapse:not(.show) {
+      display: none !important;
+    }
+  }
+
+  body.nav-open #t4-header.t4-palette-primary {
+    background-color: $primary;
+  }
+}
+
+//
+// The Nav
+.t4-main-nav {
+  // T4: Need to make the Nav horizontal on lg media.
+  // Because Joomla! add .flex-column to the default menu module
+  @include media-breakpoint-up(lg) {
+    .navbar-nav {
+      flex-direction: row !important;
+    }
+  }
+}
+
+
+//
+// Breadcrumbs
+// -----------------------------------
+.breadcrumb {
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+
+  li:first-child {
+    color: $gray-500;
+  }
+
+  .divider {
+    display: inline-block;
+    text-align: center;
+    width: $spacer;
+
+    &:before {
+      color: $gray-400;
+      content: "/";
+      display: inline-block;
+    }
+
+    img {
+      display: none;
+    }
+  }
+}
+
+
+//
+// Pagination
+// -----------------------------------
+.pagination {
+  margin: $spacer auto;
+
+  .page-link,
+  .pagenav {
+    .icon-chevron-left,
+    .icon-chevron-right {
+      font-size: $font-size-xs;
+      text-align: center;
+      margin-right: $spacer-xs;
+    }
+    
+    .icon-chevron-right {
+      margin-right: 0;
+      margin-left: $spacer-xs;
+    }
+  }
+
+}
+
+.counter {
+  margin-top: $spacer-sm;
+  color: $gray-dark;
+}
+
+
+// Navigation bar
+//-----------------------------------
+.pagenav {
+  list-style: none;
+  margin: $spacer*2 0 0;
+  padding: 0;
+  text-align: right;
+  @include clearfix();
+
+  li {
+    display: inline-block;
+
+    &:first-child {
+      margin-right: $spacer/2;
+    }
+
+    &:last-child {
+      margin-left: $spacer/2;
+    }
+
+    a {
+      background-color: $gray-200;
+      color: $body-color;
+      padding: $spacer/2 $spacer;
+      &:hover, &:focus, &:active {
+        background-color: $gray-300;
+        text-decoration: none;
+      }
+    }
+
+    span:before {
+      color: $gray-700;
+      font-size: $font-size-xs;
+    }
+  }
+}
+
+// Tabs 
+// ----------------------------------
+.nav-tabs {
+  & + .tab-content {
+    padding: $spacer 0;
+  }
+}

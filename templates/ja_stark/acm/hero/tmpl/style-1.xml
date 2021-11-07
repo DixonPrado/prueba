@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <title>Hero Style 1</title>
+	<sampledata><![CDATA[  {":type":"uber:hero","hero":{"jatools-layout-hero":"style-1","hero-style[block-intro]":[""],"hero-style[block-extra-class]":[" no-padding"],"hero-style[hero-style]":["style-light"],"hero-style[hero-content-position]":["position-center"],"hero-style[hero-text-align]":["text-center"],"hero-style[hero-screen]":[""],"hero-style[hero-effect]":[""],"hero-style[hero-heading]":["Improve your team productivity, build customer loyalty while delivering amazing service."],"hero-style[hero-heading-size]":[""],"hero-style[hero-intro]":["Faster service from anywhere. Take your service to the next level."],"hero-style[hero-quote]":[""],"hero-style[hero-img]":[""],"hero-style[hero-text]":["View Packages"],"hero-style[hero-class]":[""],"hero-style[hero-link]":["http://www.joomlart.com"],"hero-style[hero-btn2-text]":["Free Trial"],"hero-style[hero-btn2-link]":["http://www.joom.vn"],"hero-style[hero-bg]":["images/joomlart/uber/slideshow/wall-02.jpg"],"hero-style[hero-video]":["vimeo="]}}
+    ]]></sampledata>
+  <fields name="hero-style">
+    <fieldset name="basic" label="HERO_BASIC_LABEL" description="HERO_BASIC_DESC" multiple="0">     
+      <field name="hero-animation" type="list" default="fadeInRight"
+          global="1"
+          label="HERO_ANIMATION_LABEL"
+          description="HERO_ANIMATION_DESC">
+        <option value="fadeInRight">Fade In Right</option>
+        <option value="fadeInLeft">Fade In Left</option>
+        <option value="fadeInDown">Fade In Down</option>
+        <option value="fadeInUp">Fade In Up</option>
+      </field>
+
+      <field name="hero-text-align" type="list" default="text-left"
+          global="1"
+          label="HERO_TEXT_ALIGN_LABEL"
+          description="HERO_TEXT_ALIGN_DESC">
+        <option value="text-left">JGLOBAL_LEFT</option>
+        <option value="text-center">JGLOBAL_CENTER</option>
+        <option value="text-right">JGLOBAL_RIGHT</option>
+      </field>
+
+      <field name="hero-content-heading-tag" type="list" default="h1"
+          global="1"
+          label="HERO_CONTENT_HEADING_TAG_LABEL"
+          description="HERO_CONTENT_HEADING_TAG_DESC">
+        <option value="h1">h1</option>
+        <option value="h2">h2</option>
+        <option value="h3">h3</option>
+        <option value="h4">h4</option>
+        <option value="h5">h5</option>
+        <option value="h6">h6</option>
+      </field>
+    </fieldset>
+
+    <fieldset name="hero-content" label="HERO_CONTENT_LABEL" description="HERO_CONTENT_DESC" multiple="0">
+      <field name="hero-heading" type="textarea" cols="40" rows="5" default="" label="HERO_HEADING_LABEL" description="HERO_HEADING_DESC"></field>
+      <field name="hero-intro" type="textarea" cols="40" rows="5" default="" label="HERO_INTRODUCTION_LABEL" description="HERO_INTRODUCTION_DESC"></field>
+      <field name="hero-text" type="text" size="50" default="" label="HERO_BTN_TEXT_LABEL" description="HERO_BTN_TEXT_DESC"></field>
+      <field name="hero-link" type="text" size="50" default="" label="HERO_BTN_LINK_LABEL" description="HERO_BTN_LINK_DESC"></field>
+      <field name="hero-class" type="text" size="50" default="" label="HERO_BTN_CLASS_LABEL" description="HERO_BTN_CLASS_DESC"></field>  
+    </fieldset>
+  </fields>
+</form>

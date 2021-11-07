@@ -1,0 +1,576 @@
+/**
+* $JA#COPYRIGHT$
+*/
+
+
+// --------------------------------------------------
+// Module Styles
+// --------------------------------------------------
+
+// Extend style in base
+// --------------------
+@import "../../../plugins/system/t4/themes/base/scss/_modules";
+
+// 
+// Genecric Module
+// --------------------------------------------------
+.t4-module {
+
+  // Module Inner
+  .module-inner {
+  }
+}
+
+.t4-section-module {
+  .module-title {
+    padding-bottom: 0;
+    text-transform: none;
+    border-bottom: 0;
+
+    span {
+      border-bottom: 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
+
+      &::after {
+        content: ".";
+      }
+    }
+  }
+
+  .sub-title {
+    font-weight: normal;
+    margin-bottom: $spacer-lg;
+    font-family: "louis_george_caferegular";
+  }
+
+  .mod-right & {
+    background: $white;
+    padding: $spacer*4;
+    border-radius: $border-radius;
+
+    @include media-breakpoint-up(lg) {
+      float: right;
+      width: 50%;
+    }
+  }
+}
+
+.mod-right .t4-section-inner {
+  overflow: hidden;
+}
+
+// Module Title
+// ------------
+.module-title {
+  padding-bottom: 0;
+  text-transform: none;
+  border-bottom: 0;
+  margin: 0 0 $spacer 0;
+  color: $secondary;
+  font-weight: normal;
+
+  span {
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+    &::after {
+      content: ".";
+    }
+  }
+}
+
+// Module Content
+// --------------
+.module-ct,
+.moduletable {
+}
+
+
+// 
+// Modules Prefixes
+// -----------------------------
+
+// Dark
+// -----
+.module-dark {
+  .module-title {
+  }
+} 
+
+.module.bg-primary,
+.module.bg-secondary,
+.module.bg-success,
+.module.bg-danger,
+.module.bg-warning,
+.module.bg-info,
+.module.bg-dark,
+// Cards
+.card.bg-primary,
+.card.bg-secondary,
+.card.bg-success,
+.card.bg-danger,
+.card.bg-warning,
+.card.bg-info,
+.card.bg-dark {
+  .module-title {
+    span {
+    }
+  }
+
+  .module-ct {
+    p {
+    }
+  }
+}
+
+// Mod rounded
+// -----------
+.module.mod-rounded {
+  .mod-rounded {
+  }
+}
+
+// Hilite
+// ----------
+.module-hilite {
+}
+
+// Shadow
+// ----------
+// Use to add Shadow to modules
+.mod-shadow {
+  .mod-shadow {
+  }
+}
+
+// Module outline
+.mod-border {
+  .mod-border {
+  }
+}
+
+//
+// JOOMLA! MODULES
+// --------------------------------------------------
+
+// Generic Modulable
+// -----------------
+// Modules are used in Component Position
+.moduletable {
+  > h3 {
+  }
+}
+
+
+// Menu
+// ----
+.t4-module,
+.t4-card,
+.moduletable,
+.module_menu {
+  .nav {
+  }
+  
+  .nav li {
+  }
+
+  .nav li .separator {
+  }
+  
+  .nav li a {
+    color: $gray-dark;
+
+    // Link States
+    &:hover, &:active, &:focus {
+      color: $body-color;
+    }
+  }
+
+  // Active state
+  .nav > li.active > a {
+    color: $body-color;
+    font-weight: $font-weight-bold;
+  }
+
+  // Sub Menus
+  .nav li ul {
+  }
+}
+
+
+// Menus in Dark Modules
+.module.bg-primary,
+.module.bg-secondary,
+.module.bg-success,
+.module.bg-danger,
+.module.bg-warning,
+.module.bg-info,
+.module.bg-dark,
+// Cards
+.card.bg-primary,
+.card.bg-secondary,
+.card.bg-success,
+.card.bg-danger,
+.card.bg-warning,
+.card.bg-info,
+.card.bg-dark {
+  .nav li a {
+  }
+}
+
+
+// Login Form
+// ----------
+#login-form {
+  margin-bottom: 0;
+
+  // Input Icons
+  .add-on {
+  }
+
+  .btn-primary {
+  }
+  
+  #form-login-username,
+  #form-login-password {
+  }
+
+  .unstyled {
+    padding-left: 0;
+    list-style: none;
+  }
+
+}
+
+.logout-button {
+  margin: $spacer 0;
+}
+
+// Advertisement
+// -------------
+.bannergroup {
+}
+
+.banneritem {
+  a {
+    font-weight: bold;
+  }
+}
+
+.bannerfooter {
+  border-top: 1px solid $border-color;
+}
+
+
+// Categories, Most Read,
+// Most Popular, Archieve, Tags...
+// -------------------------------
+.categories-module {
+  @include module-list($icon: "\f07b");
+
+  > li {
+    border-bottom: 1px dotted $border-color;
+    color: $gray-700;
+
+    h4 {
+      font-weight: 500;
+    }
+  }
+
+  a {
+    color: $body-color;
+
+    &:hover, &:focus, &:active {
+      color: $link-hover-color;
+    }
+  }
+}
+
+.category-module {
+
+  .mod-articles-category-date {
+    font-size: $font-size-xs;
+    text-transform: uppercase;
+    color: $gray-500;
+  }
+  
+  // Grid
+  &.mod-projects {
+    .item-image {
+      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: 0;
+      float: none !important;
+
+      img {
+        min-width: 100%;
+        border-radius: $border-radius;
+      }
+    }
+
+    .category-link {
+      border-bottom: 1px solid $gray-200;
+      color: $gray-800;
+      font-family: "louis_george_cafebold";
+
+      &:hover {
+        text-decoration: none;
+        border-bottom: 1px solid $gray-800;
+      }
+    }
+
+    .mod-project-item {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: $grid-gutter-width;
+      transition: 350ms all;
+      transform: scale(1);
+      z-index: 1;
+
+      &:hover {
+        transform: scale(1.1);
+        z-index: 2;
+
+        .item-info {
+          opacity: 1;
+        }
+      }
+    }
+
+    .item-info {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      padding: 2rem;
+      text-align: center;
+      color: rgba(255,255,255,0.9);
+      top: 0;
+      left: 0;
+      z-index: 2;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: end;
+      opacity: 0;
+      transition: 350ms all;
+
+      .inner {
+        text-align: center;
+      }
+
+      .mod-articles-category-title {
+        color: $white;
+        font-size: $h5-font-size;
+        margin-bottom: $spacer*1.5;
+        display: block;
+      }
+ 
+      .btn {
+        margin-top: $spacer*1.5;
+        display: inline-block;
+      }
+
+      &::before {
+        content: "";
+        background: linear-gradient(rgba(0, 0, 0, .0), rgba(0, 0, 0, .8));
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        opacity: 0.9;
+      }
+    }
+  }
+
+  &.mod-blog { 
+    position: relative;
+
+    .mod-articles-category-title {
+      margin-bottom: $spacer*2;
+      margin-top: 0;
+
+      a {
+        color: $headings-color;
+      }
+    }
+
+    .category-link {
+      border-bottom: 1px solid $gray-200;
+      color: $gray-800;
+      font-family: "louis_george_cafebold";
+
+      @include media-breakpoint-up(lg) {
+        position: absolute;
+        right: 0;
+        top: -5rem;
+      }
+
+      &:hover {
+        text-decoration: none;
+        border-bottom: 1px solid $gray-800;
+      }
+    }
+
+    .col-md-6 {
+      margin-bottom: $grid-gutter-width;
+    }
+
+    @include media-breakpoint-down(lg) {
+      .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, 
+      .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, 
+      .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, 
+      .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, 
+      .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, 
+      .col-xl, .col-xl-auto {
+        padding-bottom: $grid-gutter-width/2;
+        padding-top: $grid-gutter-width/2;
+      }
+    }
+
+    .item-image {
+      margin-right: 0 !important;
+      float: none !important;
+
+      img {
+        border-radius: $border-radius;
+      }
+    }
+  }
+}
+ 
+.mostread,
+.latestnews,
+.relateditems,
+.tagssimilar ul {
+  li a {
+    color: $headings-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.archive-module {
+}
+
+
+// News Feed
+// ----------
+.feed {
+  // Feed Title
+  h4 {
+  }
+
+  // Feed list
+  .newsfeed {
+
+    li {
+      border-top: 1px solid $border-color; 
+    }
+
+    .feed-link {
+    }
+
+    .feed-item-description {
+    }
+  }
+
+}
+
+
+// Syndication
+// -----------
+a.syndicate-module {
+}
+
+
+// Latest Users 
+// ------------
+.latestusers {
+  li {
+  }
+}
+
+
+// Stats 
+// -----
+.stats-module {
+  dt, dd {
+  }
+}
+
+
+// Popular Tags
+//-------------
+.tagspopular {
+  ul {
+  }
+
+  ul > li {
+  }
+
+  ul > li > a {
+    // Links states
+    &:hover,
+    &:focus,
+    &:active {
+    }
+  }
+
+  .tag-count {
+  }
+}
+
+
+// Breadcrums Module
+// ----------------- 
+.module-ct > ol.breadcrumb {
+}
+
+// JA Masthead
+// ------------
+.t4-masthead {
+  padding-left: $grid-gutter-width/2;
+  padding-right: $grid-gutter-width/2;
+
+  .map-container {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .ja-masthead {
+    color: $white;
+    position: relative;    
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 11;
+
+    .ja-masthead-title {
+      color: $white;
+    }
+
+    .ja-masthead-detail {
+      padding: 2rem 0;
+      text-align: left;
+
+      .article-info {
+        color: $white;
+      }
+    }
+  }
+}
+
+// Language module
+div.mod-languages {
+  ul li {
+    margin: 0;
+    
+    &.lang-active {
+      background-color: transparent;
+    }
+  }
+}

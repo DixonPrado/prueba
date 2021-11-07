@@ -1,0 +1,85 @@
+.t4-error-page {
+  background-color: #f8f9fa;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #495057;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0; }
+  .t4-error-page h1 {
+    margin: 0 0 1rem;
+    font-size: 1.333rem; }
+    @media screen and (min-width: 768px) {
+      .t4-error-page h1 {
+        font-size: 1.733rem; } }
+  .t4-error-page .t4-error-msg {
+    background-color: #fff;
+    -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.075);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.075);
+    border-radius: 7px;
+    padding: 2rem;
+    margin: 0 1rem;
+    min-height: 180px;
+    margin-top: calc(100vh / 2);
+    max-width: 576px;
+    position: relative;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+    @media screen and (min-width: 768px) {
+      .t4-error-page .t4-error-msg {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 8rem;
+        text-align: left; } }
+  .t4-error-page img {
+    opacity: .1;
+    margin: 0 auto;
+    width: 5rem; }
+    @media screen and (min-width: 768px) {
+      .t4-error-page img {
+        position: absolute;
+        left: 2rem;
+        top: 2.5rem;
+        margin: 0; } }
+  .t4-error-page .error-message {
+    margin-top: 0;
+    margin-bottom: 2rem; }
+  .t4-error-page code {
+    background-color: #FEF3F8;
+    border-radius: 3px;
+    color: #e83e8c;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9333rem;
+    padding: 0 5px; }
+  .t4-error-page .cta-wrap h3 {
+    color: #868e96;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0 0 0.5rem 0;
+    text-transform: uppercase; }
+    @media screen and (min-width: 768px) {
+      .t4-error-page .cta-wrap h3 {
+        display: inline-block;
+        margin: 0 0.5rem 0 0; } }
+  .t4-error-page .cta-wrap a {
+    background: #e9ecef;
+    border-radius: 25px;
+    color: #495057;
+    display: inline-block;
+    font-size: 0.8rem;
+    margin: 5px 0.25rem;
+    letter-spacing: 1px;
+    padding: 0.33333rem 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    -webkit-transition: all 0.25s ease-in;
+    -o-transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in; }
+    .t4-error-page .cta-wrap a:hover, .t4-error-page .cta-wrap a:focus, .t4-error-page .cta-wrap a:active {
+      background-color: #2196F3;
+      color: #fff; }

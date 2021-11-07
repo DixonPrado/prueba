@@ -1,0 +1,41 @@
+.__class {
+	color: __text_color;
+	background-color: __background_color;
+}
+
+.__class a:not(.btn) {
+	color: __link_color;
+}
+
+.__class a:not(.btn):hover {
+	color: __link_hover_color;
+}
+
+/* Heading */
+.__class h1,
+.__class h2,
+.__class h3,
+.__class h4,
+.__class h5,
+.__class h6 {
+	color: __heading_color;
+}
+
+/* Module */
+.__class .nav > li > a {
+	color: __link_color;
+}
+
+.__class .nav > li > a:hover,
+.__class .nav > li > a:focus,
+.__class .nav > li > a:active {
+	color: __link_hover_color;
+}
+
+.layout-home .t4-sticky.__class {
+	background-color: transparent;
+}
+
+.not-at-top .t4-sticky.__class {
+	background-color: __background_color;
+}

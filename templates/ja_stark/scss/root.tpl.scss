@@ -1,0 +1,68 @@
+/**
+* $JA#COPYRIGHT$
+*/
+
+
+// Templates Variables. Need to be put on top of BS variables
+
+//
+// Default Joomla Vendors
+// ---------------------------------------------
+
+// Bootstrap Required
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/functions";
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/variables";
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/mixins";
+
+@import "variables";
+
+// rules
+:root {
+  // Custom variable values only support SassScript inside `#{}`.
+  @each $color, $value in $theme-colors {
+    --#{$color}: __styles_#{$color};
+  }
+
+  // Body background
+  --body-bg-color: __site_body_bg_color;
+  --body-bg-img: url(__site_body_bg_img);
+  --body-bg-img-repeat: __site_body_bg_img_repeat;
+  --body-bg-img-position: __site_body_bg_img_position;
+  --body-bg-img-attachment: __site_body_bg_img_attachment;
+  --body-bg-img-size: __site_body_bg_img_size;
+
+  // Body text color
+  --body-text-color: __site_body_text_color;
+
+  // Global link color
+  --link-color: __site_link_color;
+  --link-hover-color: __site_link_hover_color;
+
+  // Typgraphy
+  --font-family-base: __styles_font_family_base;
+  --font-size-root: __styles_font_size_root;
+  --font-weight-base: __styles_font_weight_base;
+
+  --line-height-base: __styles_line_height_base;
+  --letter-spacing: __styles_letter_spacing;
+
+  // Headings font variables
+  --heading-font-family: __styles_heading_font_family;
+  --heading-font-weight: __styles_heading_font_weight;
+  --heading-line-height: __styles_heading_line_height;
+  --heading-letter-spacing: __styles_heading_letter_spacing;
+
+  // Headings font size
+  --h1-font-size: __styles_h1_font_size;
+  --h2-font-size: __styles_h2_font_size;
+  --h3-font-size: __styles_h3_font_size;
+  --h4-font-size: __styles_h4_font_size;
+  --h5-font-size: __styles_h5_font_size;
+  --h6-font-size: __styles_h6_font_size;
+
+  // Module
+  --mod-bg-color: __styles_mod_bg_color;
+  --mod-title-color: __styles_mod_title_color;
+  --mod-text-color: __styles_mod_text_color;
+
+}

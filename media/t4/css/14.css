@@ -1,0 +1,421 @@
+
+/* Pattern: Dark */
+.t4-palette-dark {
+	color: #f8f9fa;
+	background-color: #111111;
+}
+.t4-palette-dark a:not(.btn) {
+	color: #22cc99;
+}
+.t4-palette-dark a:not(.btn):hover {
+	color: #22cc99;
+}
+/* Heading */
+.t4-palette-dark h1,
+.t4-palette-dark h2,
+.t4-palette-dark h3,
+.t4-palette-dark h4,
+.t4-palette-dark h5,
+.t4-palette-dark h6 {
+	color: #f8f9fa;
+}
+/* Module */
+.t4-palette-dark .nav > li > a {
+	color: #22cc99;
+}
+.t4-palette-dark .nav > li > a:hover,
+.t4-palette-dark .nav > li > a:focus,
+.t4-palette-dark .nav > li > a:active {
+	color: #22cc99;
+}
+.layout-home .t4-sticky.t4-palette-dark {
+	background-color: transparent;
+}
+.not-at-top .t4-sticky.t4-palette-dark {
+	background-color: #111111;
+}
+
+/* Pattern: Primary */
+.t4-palette-primary {
+	color: #f8f9fa;
+	background-color: #2e3d96;
+}
+.t4-palette-primary a:not(.btn) {
+	color: #22cc99;
+}
+.t4-palette-primary a:not(.btn):hover {
+	color: #22cc99;
+}
+/* Heading */
+.t4-palette-primary h1,
+.t4-palette-primary h2,
+.t4-palette-primary h3,
+.t4-palette-primary h4,
+.t4-palette-primary h5,
+.t4-palette-primary h6 {
+	color: #f8f9fa;
+}
+/* Module */
+.t4-palette-primary .nav > li > a {
+	color: #22cc99;
+}
+.t4-palette-primary .nav > li > a:hover,
+.t4-palette-primary .nav > li > a:focus,
+.t4-palette-primary .nav > li > a:active {
+	color: #22cc99;
+}
+.layout-home .t4-sticky.t4-palette-primary {
+	background-color: transparent;
+}
+.not-at-top .t4-sticky.t4-palette-primary {
+	background-color: #2e3d96;
+}
+
+/* Pattern: Gray */
+.t4-palette-gray {
+	color: #888888;
+	background-color: #f8f9fa;
+}
+.t4-palette-gray a:not(.btn) {
+	color: #22cc99;
+}
+.t4-palette-gray a:not(.btn):hover {
+	color: #22cc99;
+}
+/* Heading */
+.t4-palette-gray h1,
+.t4-palette-gray h2,
+.t4-palette-gray h3,
+.t4-palette-gray h4,
+.t4-palette-gray h5,
+.t4-palette-gray h6 {
+	color: #111111;
+}
+/* Module */
+.t4-palette-gray .nav > li > a {
+	color: #22cc99;
+}
+.t4-palette-gray .nav > li > a:hover,
+.t4-palette-gray .nav > li > a:focus,
+.t4-palette-gray .nav > li > a:active {
+	color: #22cc99;
+}
+.layout-home .t4-sticky.t4-palette-gray {
+	background-color: transparent;
+}
+.not-at-top .t4-sticky.t4-palette-gray {
+	background-color: #f8f9fa;
+}
+
+/* Pattern: Transparent */
+.t4-palette-transparent {
+	color: #f8f9fa;
+	background-color: rgba(255, 255, 255, 0);
+}
+.t4-palette-transparent a:not(.btn) {
+	color: #22cc99;
+}
+.t4-palette-transparent a:not(.btn):hover {
+	color: #22cc99;
+}
+/* Heading */
+.t4-palette-transparent h1,
+.t4-palette-transparent h2,
+.t4-palette-transparent h3,
+.t4-palette-transparent h4,
+.t4-palette-transparent h5,
+.t4-palette-transparent h6 {
+	color: #f8f9fa;
+}
+/* Module */
+.t4-palette-transparent .nav > li > a {
+	color: #22cc99;
+}
+.t4-palette-transparent .nav > li > a:hover,
+.t4-palette-transparent .nav > li > a:focus,
+.t4-palette-transparent .nav > li > a:active {
+	color: #22cc99;
+}
+.layout-home .t4-sticky.t4-palette-transparent {
+	background-color: transparent;
+}
+.not-at-top .t4-sticky.t4-palette-transparent {
+	background-color: rgba(255, 255, 255, 0);
+}
+
+/* Section: topbar */
+
+#t4-topbar .bg-overlay {
+	opacity: 0.5;
+}
+
+/* Section: header */
+#t4-header {
+	position: -webkit-sticky !important;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+#t4-header .bg-overlay {
+	opacity: 0.5;
+}
+#t4-header .bg-overlay-image {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+}
+
+/* Section: masthead */
+
+#t4-masthead .bg-overlay {
+	opacity: 1;
+}
+#t4-masthead .bg-overlay-image {
+	background-image: url(/joom/ja_stark_rtl/images/demo/bg/section-5.png);
+	background-size: cover;
+}
+
+/* Section: mainbody */
+
+#t4-mainbody .bg-overlay {
+	opacity: 0.5;
+}
+
+/* Section: footer */
+
+#t4-footer .bg-overlay {
+	opacity: 0.5;
+}
+
+/* Section: footnav */
+
+#t4-footnav .bg-overlay {
+	opacity: 0.5;
+}
+/**
+* $JA#COPYRIGHT$
+*/
+:root {
+  --primary: #2e3d96;
+  --secondary: #22cc99;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #111111;
+}
+/* for megamenu animation duration */
+.t4-megamenu.animate .dropdown.animating > .dropdown-menu {
+  transition-duration: 400ms; 
+}
+body {
+  color: #888888;
+  line-height: 1.56;
+  letter-spacing: normal; 
+}
+.t4-content {
+  background-color: rgba(255, 255, 255, 0); 
+}
+a {
+  color: #22cc99; 
+}
+a:hover {
+  color: #22cc99; 
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: louis_george_cafebold;
+  line-height: 1.4;
+  letter-spacing: normal; 
+}
+h1, .h1 {
+  font-size: 60px; 
+}
+h2, .h2 {
+  font-size: 32px; 
+}
+h3, .h3 {
+  font-size: 28px; 
+}
+h4, .h4 {
+  font-size: 24px; 
+}
+h5, .h5 {
+  font-size: 20px; 
+}
+h6, .h6 {
+  font-size: 16px; 
+}
+/* COLORS
+--------------------------------------- */
+/* Backgrounds Colors */
+.bg-primary {
+  background-color: #2e3d96 !important; 
+}
+.bg-secondary {
+  background-color: #22cc99 !important; 
+}
+.bg-success {
+  background-color: #28a745 !important; 
+}
+.bg-info {
+  background-color: #17a2b8 !important; 
+}
+.bg-warning {
+  background-color: #ffc107 !important; 
+}
+.bg-danger {
+  background-color: #dc3545 !important; 
+}
+.bg-light {
+  background-color: #f8f9fa !important; 
+}
+.bg-dark {
+  background-color: #111111 !important; 
+}
+/* Buttons Colors */
+.btn.btn-primary {
+  background-color: #2e3d96 !important;
+  border-color: #2e3d96 !important; 
+}
+.btn.btn-primary:hover {
+  opacity: 0.85; 
+}
+.btn.btn-secondary {
+  background-color: #22cc99 !important;
+  border-color: #22cc99 !important; 
+}
+.btn.btn-secondary:hover {
+  opacity: 0.85; 
+}
+.btn.btn-success {
+  background-color: #28a745 !important;
+  border-color: #28a745 !important; 
+}
+.btn.btn-success:hover {
+  opacity: 0.85; 
+}
+.btn.btn-info {
+  background-color: #17a2b8 !important;
+  border-color: #17a2b8 !important; 
+}
+.btn.btn-info:hover {
+  opacity: 0.85; 
+}
+.btn.btn-warning {
+  background-color: #ffc107 !important;
+  border-color: #ffc107 !important; 
+}
+.btn.btn-warning:hover {
+  opacity: 0.85; 
+}
+.btn.btn-danger {
+  background-color: #dc3545 !important;
+  border-color: #dc3545 !important; 
+}
+.btn.btn-danger:hover {
+  opacity: 0.85; 
+}
+.btn.btn-light {
+  background-color: #f8f9fa !important;
+  border-color: #f8f9fa !important; 
+}
+.btn.btn-light:hover {
+  opacity: 0.85; 
+}
+.btn.btn-dark {
+  background-color: #111111 !important;
+  border-color: #111111 !important; 
+}
+.btn.btn-dark:hover {
+  opacity: 0.85; 
+}
+/* Text Colors */
+.text-primary {
+  color: #2e3d96 !important; 
+}
+.text-secondary {
+  color: #22cc99 !important; 
+}
+.text-success {
+  color: #28a745 !important; 
+}
+.text-info {
+  color: #17a2b8 !important; 
+}
+.text-warning {
+  color: #ffc107 !important; 
+}
+.text-danger {
+  color: #dc3545 !important; 
+}
+.text-light {
+  color: #f8f9fa !important; 
+}
+.text-dark {
+  color: #111111 !important; 
+}
+/* Badage Colors */
+.badge-primary {
+  background-color: #2e3d96; 
+}
+.badge-secondary {
+  background-color: #22cc99; 
+}
+.badge-success {
+  background-color: #28a745; 
+}
+.badge-info {
+  background-color: #17a2b8; 
+}
+.badge-warning {
+  background-color: #ffc107; 
+}
+.badge-danger {
+  background-color: #dc3545; 
+}
+.badge-light {
+  background-color: #f8f9fa; 
+}
+.badge-dark {
+  background-color: #111111; 
+}
+/* TPL
+--------------------------------------- */
+.contact .contact-links ul li a:hover > span, .contact .contact-links ul li a:focus > span, .contact .contact-links ul li a:active > span {
+  background: #2e3d96;
+  border-color: #2e3d96; 
+}
+.t4-section.t4-pattern-primary {
+  background: #2e3d96; 
+}
+  .t4-section.t4-pattern-primary .bg-overlay-image::after {
+    background: #2e3d96; 
+}
+.acm-hero .btn.html5lightbox.primary,
+.acm-hero .btn.html5link.primary {
+  background: #2e3d96; 
+}
+.t4-megamenu .dropdown-menu ul > li a.nav-link:hover,
+.t4-megamenu .dropdown-menu ul > li a.dropdown-item:hover {
+  color: #22cc99; 
+}
+.t4-megamenu .dropdown-menu ul > .active a.nav-link,
+.t4-megamenu .dropdown-menu ul > .active a.dropdown-item {
+  color: #22cc99; 
+}
+.t4-megamenu .dropdown-menu .mega-nav > li a.nav-link:hover,
+.t4-megamenu .dropdown-menu .mega-nav > li a.dropdown-item:hover {
+  color: #22cc99; 
+}
+.t4-megamenu .dropdown-menu .mega-nav > .active a.nav-link,
+.t4-megamenu .dropdown-menu .mega-nav > .active a.dropdown-item {
+  color: #22cc99; 
+}
+.module-title {
+  color: #22cc99; 
+}
+#t4-section-7 .t4-section-module .module-title {
+  color: #22cc99; 
+}

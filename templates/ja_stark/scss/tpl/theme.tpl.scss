@@ -1,0 +1,94 @@
+// Function, variables
+@import "../vars";
+
+// Theme Customize
+@import "../../../../plugins/system/t4/themes/base/scss/theme.tpl";
+
+
+/* TPL
+--------------------------------------- */
+.contact {
+  .contact-links {
+    ul li a { 
+      &:hover, &:focus, &:active {
+        > span {
+          background: __color_primary;
+          border-color: __color_primary;
+        }
+      }
+    }
+  }
+}
+
+.t4-section {
+  &.t4-pattern-primary {
+    background: __color_primary;
+
+    .bg-overlay-image::after {
+      background: __color_primary;
+    }
+  }
+}
+
+.acm-hero { 
+  .btn.html5lightbox,
+  .btn.html5link {
+    &.primary {
+      background: __color_primary;
+    }
+  }
+}
+
+.t4-megamenu {
+  .dropdown-menu {
+    ul {
+      > li {
+        a.nav-link,
+        a.dropdown-item {
+
+          &:hover {
+            color: __color_secondary;
+          }
+        }
+      }
+
+      > .active {
+        a.nav-link,
+        a.dropdown-item {
+          color: __color_secondary;
+        }
+      }
+    }
+
+    .mega-nav {
+      > li {
+        a.nav-link,
+        a.dropdown-item {
+
+          &:hover {
+            color: __color_secondary;
+          }
+        }
+      }
+
+      > .active {
+        a.nav-link,
+        a.dropdown-item {
+          color: __color_secondary;
+        }
+      }
+    }
+  }
+}
+
+.module-title {
+  color: __color_secondary;
+}
+
+#t4-section-7 {
+  .t4-section-module {
+    .module-title {
+      color: __color_secondary;
+    }
+  }
+}

@@ -1,0 +1,82 @@
+// Theme Customize
+@import "../../../plugins/system/t4/themes/base/scss/frontend-edit";
+
+html {
+	#member-profile {
+		text-align: left;
+	}
+
+	#t4-header .container {
+		padding-bottom: 1.5rem;
+		padding-top: 1.5rem; 
+	}
+
+	// Edit Module
+	// -----------------------
+
+	// Masthead Mod
+	table.jalist {
+		.btn.modal {
+			display: inline-block;
+			position: static;
+			width: auto;
+		} 
+	}
+
+	table.jalist, 
+	table.jatable {
+		.btn:hover {
+			border: 0;
+		}
+	}
+
+  #options {
+    .control-group .controls {
+      margin-left: 0;
+    }
+  } 
+
+	.jaacm-list {
+	}
+
+	.input-append .add-on, 
+	.input-prepend .add-on {
+    display: inline-block; 
+    width: auto;
+    height: 18px;
+    min-width: 16px;
+    padding: 4px 5px;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    text-align: center;
+    text-shadow: 0 1px 0 #fff;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    box-sizing: unset;
+
+    &:first-child {
+    	margin-right: -1px;
+			-webkit-border-radius: 3px 0 0 3px;
+			-moz-border-radius: 3px 0 0 3px;
+			border-radius: 3px 0 0 3px;
+    }
+	}
+
+	&[dir="rtl"] {
+		#member-profile {
+			text-align: right;
+		}
+
+		.chzn-container .chzn-drop,
+		.chzn-container-single.chzn-container-single-nosearch .chzn-search {
+			right: -9999px;
+			left: auto;
+		}
+
+		.chzn-container.chzn-with-drop .chzn-drop {
+			right: 0;
+		}
+	}
+}
+

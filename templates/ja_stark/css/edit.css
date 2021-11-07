@@ -1,0 +1,40 @@
+html #member-profile {
+  text-align: left; }
+
+html #t4-header .container {
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem; }
+
+html table.jalist .btn.modal {
+  display: inline-block;
+  position: static;
+  width: auto; }
+
+html table.jalist .btn:hover,
+html table.jatable .btn:hover {
+  border: 0; }
+
+html .jaacm-list {
+  margin-left: -220px; }
+
+html .input-append .add-on,
+html .input-prepend .add-on {
+  display: inline-block;
+  width: auto;
+  height: 18px;
+  min-width: 16px;
+  padding: 4px 5px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  text-align: center;
+  text-shadow: 0 1px 0 #fff;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  box-sizing: unset; }
+  html .input-append .add-on:first-child,
+  html .input-prepend .add-on:first-child {
+    margin-right: -1px;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px; }

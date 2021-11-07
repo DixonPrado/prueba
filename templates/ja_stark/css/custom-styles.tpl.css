@@ -1,0 +1,303 @@
+/** 
+ *------------------------------------------------------------------------------
+ * @package       T4_Blank - Free Template for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2016 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt
+ *------------------------------------------------------------------------------
+**/
+
+:root {
+  --primary: __primary;
+  --secondary: __secondary;
+  --success: __success;
+  --info: __info;
+  --warning: __warning;
+  --danger: __danger;
+  --light: __light;
+  --dark: __dark;
+  --link_color: __link_color;
+  --link_hover_color: __link_hover_color;
+  --body_img: __body_img;
+  --body_img_repeat: __body_img_repeat;
+  --body_img_position: __body_img_position;
+  --body_img_size: __body_img_size;
+  --body_color: __body_color;
+  --body_bg: __body_bg;
+  --font_family_base: __font_family_base;
+  --font_size_root: __font_size_root;
+  --font_weight_base: __font_weight_base;
+  --line_height_base: __line_height_base;
+  --letter_spacing: __letter_spacing;
+  --headings_font_family: __headings_font_family;
+  --container_xl: __container_xl;
+  --container_lg: __container_lg;
+  --container_md: __container_md;
+  --container_sm: __container_sm;
+  --grid_gutter_width: __grid_gutter_width;
+  --ahalf_grid_gutter_width: calc(var(--grid_gutter_width) / 2);
+} 
+
+
+/* GEMERAL
+--------------------------------------- */
+
+html {
+  font-size: var(--font_size_root);
+}
+
+body {
+  background-image: url(__body_img);
+  background-repeat: var(--body_img_repeat);
+  background-color: var(--body_bg);
+  background-repeat: var(--body_img_repeat);
+  background-position: var(--body_img_position);
+  color: var(--body_color);
+  font-family: var(--font_family_base);
+  line-height: var(--line_height_base);
+  font-weight: var(--font_weight_base);
+  letter-spacing: var(--letter_spacing);
+}
+
+a {
+  color: var(--link_color);
+}
+
+a:hover {
+  color: var(--link_hover_color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--headings_font_family);
+}
+
+
+/* GRID
+--------------------------------------- */
+
+.container {
+  padding-right: var(--ahalf_grid_gutter_width);
+  padding-left: var(--ahalf_grid_gutter_width);
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: var(--container_sm);
+  } 
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: var(--container_md);
+  } 
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: var(--container_lg);
+  } 
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: var(--container_xl);
+  } 
+}
+
+.row {
+  margin-right: calc(var(--ahalf_grid_gutter_width) * -1);
+  margin-left: calc(var(--ahalf_grid_gutter_width) * -1);
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, 
+.col, .col-auto, 
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, 
+.col-sm, .col-sm-auto, 
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, 
+.col-md, .col-md-auto, 
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, 
+.col-lg, .col-lg-auto, 
+.col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, 
+.col-xl, .col-xl-auto {
+  padding-right: var(--ahalf_grid_gutter_width);
+  padding-left: var(--ahalf_grid_gutter_width);
+}
+
+/* COLORS
+--------------------------------------- */
+
+/* Backgrounds Colors */
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.bg-secondary {
+  background-color: var(--secondary) !important;
+}
+
+.bg-success {
+  background-color: var(--success) !important;
+}
+
+.bg-info {
+  background-color: var(--info) !important;
+}
+
+.bg-warning {
+  background-color: var(--warning) !important;
+}
+
+.bg-danger {
+  background-color: var(--danger) !important;
+}
+
+.bg-light {
+  background-color: var(--light) !important;
+}
+
+.bg-dark {
+  background-color: var(--dark) !important;
+}
+
+/* Buttons Colors */
+
+.btn.btn-primary {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+.btn.btn-primary:hover {
+  opacity: 0.85;
+}
+
+.btn.btn-secondary {
+  background-color: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+
+.btn.btn-secondary:hover {
+  opacity: 0.85;
+}
+
+.btn.btn-success {
+  background-color: var(--success) !important;
+  border-color: var(--success) !important;
+}
+
+.btn.btn-success:hover {
+  opacity: 0.85;
+}
+
+.btn.btn-info {
+  background-color: var(--info) !important;
+  border-color: var(--info) !important;
+}
+
+.btn.btn-info:hover {
+  opacity: 0.85;
+}
+
+.btn.btn-warning {
+  background-color: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+
+.btn.btn-warning:hover {
+  opacity: 0.85;
+}
+
+.btn.btn-danger {
+  background-color: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+
+.btn.btn-danger:hover {
+  opacity: 0.85;
+}
+
+.btn.btn-light {
+  background-color: var(--light) !important;
+  border-color: var(--light) !important;
+}
+
+.btn.btn-light:hover {
+  opacity: 0.85;
+}
+
+.btn.btn-dark {
+  background-color: var(--dark) !important;
+  border-color: var(--dark) !important;
+}
+
+/* Text Colors */
+
+.btn.btn-dark:hover {
+  opacity: 0.85;
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.text-secondary {
+  color: var(--secondary) !important;
+}
+
+.text-success {
+  color: var(--success) !important;
+}
+
+.text-info {
+  color: var(--info) !important;
+}
+
+.text-warning {
+  color: var(--warning) !important;
+}
+
+.text-danger {
+  color: var(--danger) !important;
+}
+
+.text-light {
+  color: var(--light) !important;
+}
+
+.text-dark {
+  color: var(--dark) !important;
+}
+
+/* Badage Colors */
+
+.badge-primary {
+  color: var(--primary);
+}
+
+.badge-secondary {
+  color: var(--secondary);
+}
+
+.badge-success {
+  color: var(--success);
+}
+
+.badge-info {
+  color: var(--info);
+}
+
+.badge-warning {
+  color: var(--warning);
+}
+
+.badge-danger {
+  color: var(--danger);
+}
+
+.badge-light {
+  color: var(--light);
+}
+
+.badge-dark {
+  color: var(--dark);
+}

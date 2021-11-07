@@ -1,0 +1,49 @@
+/**
+* $JA#COPYRIGHT$
+*/
+
+// 
+// Default Joomla Vendors
+// ---------------------------------------------
+
+// Bootstrap Required
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_variables";
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/bootstrap";
+
+// Bootstrap Optional. Remove if ur theme doesn't use any 
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_root"; 
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_print";
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_reboot";
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_type";
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_images";
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_code";
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_grid";
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_tables";
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_forms";  
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_buttons";  
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_transitions";
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_dropdown";
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_button-group";
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_input-group";  
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_custom-forms";
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_nav";
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_navbar"; 
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_card"; 
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_breadcrumb";
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_pagination";
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_badge";
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_jumbotron";
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_alert";
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_progress"; 
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_media";
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_list-group";
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_close";
+
+// Component / Javascript
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_modal";
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_tooltip";
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_popover"; 
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_carousel";
+
+// Utility classes
+@import "../../../plugins/system/t4/themes/base/vendors/bootstrap/scss/_utilities"; 

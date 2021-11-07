@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <title>Hero Style 2</title>
+	<sampledata><![CDATA[  {":type":"ja_stark:hero","hero":{"jatools-layout-hero":"style-2","hero-style[hero-style]":["style-light"],"hero-style[hero-content-position]":["position-left"],"hero-style[hero-text-align]":["text-left"],"hero-style[hero-content-heading-tag]":["h5"],"hero-style[hero-heading]":["Simple Design, Prototyping and Collaboration."],"hero-style[hero-intro]":["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et pharetra dui, vulputate pellentesque nunc. Morbi egestas consectetur volutpat. Sed euismod turpis sed dignissim molestie."],"hero-style[hero-text]":["Find Out More"],"hero-style[hero-link]":["https://www.youtube.com/watch?v=29BQirH8x-0"],"hero-style[hero-class]":["btn-primary"]}}
+    ]]></sampledata>
+  <fields name="hero-style">
+    <fieldset name="basic" label="HERO_BASIC_LABEL" description="HERO_BASIC_DESC" multiple="0">           
+      <field name="hero-text-align" type="list" default="text-left"
+          global="1"
+          label="HERO_TEXT_ALIGN_LABEL"
+          description="HERO_TEXT_ALIGN_DESC">
+        <option value="text-left">JGLOBAL_LEFT</option>
+        <option value="text-center">JGLOBAL_CENTER</option>
+        <option value="text-right">JGLOBAL_RIGHT</option>
+      </field>
+
+      <field name="hero-content-heading-tag" type="list" default="h1"
+          global="1"
+          label="HERO_CONTENT_HEADING_TAG_LABEL"
+          description="HERO_CONTENT_HEADING_TAG_DESC">
+        <option value="h1">h1</option>
+        <option value="h2">h2</option>
+        <option value="h3">h3</option>
+        <option value="h4">h4</option>
+        <option value="h5">h5</option>
+        <option value="h6">h6</option>
+      </field>
+    </fieldset>
+
+    <fieldset name="hero-contents" label="HERO_CONTENT_LABEL" description="HERO_CONTENT_DESC" >
+      <field name="hero-content" type="jalist" >
+        <item name="hero-heading" type="textarea" cols="40" rows="5" default="" label="HERO_HEADING_LABEL" description="HERO_HEADING_DESC" />
+        <item name="hero-img" type="media"  default="" label="HERO_IMAGE_LABEL" description="HERO_IMAGE_DESC" />
+        <item name="hero-intro" type="textarea" cols="40" rows="5" default="" label="HERO_INTRODUCTION_LABEL" description="HERO_INTRODUCTION_DESC" />
+        <item name="hero-link" type="text" default="" label="HERO_BTN_LINK_LABEL" description="HERO_BTN_LINK_DESC" />
+      </field>
+    </fieldset>
+  </fields>
+</form>

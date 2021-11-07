@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <title>Video</title>
+	<sampledata><![CDATA[  {":type":"uber:hero","hero":{"jatools-layout-hero":"style-1","hero-style[block-intro]":[""],"hero-style[block-extra-class]":[" no-padding"],"hero-style[hero-style]":["style-light"],"hero-style[hero-content-position]":["position-center"],"hero-style[hero-text-align]":["text-center"],"hero-style[hero-screen]":[""],"hero-style[hero-effect]":[""],"hero-style[hero-heading]":["Improve your team productivity, build customer loyalty while delivering amazing service."],"hero-style[hero-heading-size]":[""],"hero-style[hero-intro]":["Faster service from anywhere. Take your service to the next level."],"hero-style[hero-quote]":[""],"hero-style[hero-img]":[""],"hero-style[hero-text]":["View Packages"],"hero-style[hero-class]":[""],"hero-style[hero-link]":["http://www.joomlart.com"],"hero-style[hero-btn2-text]":["Free Trial"],"hero-style[hero-btn2-link]":["http://www.joom.vn"],"hero-style[hero-bg]":["images/joomlart/uber/slideshow/wall-02.jpg"],"hero-style[hero-video]":["vimeo="]}}
+    ]]></sampledata>
+  <fields name="hero-style">
+    <fieldset name="hero-content" label="HERO_CONTENT_LABEL" description="HERO_CONTENT_DESC" multiple="0">
+      <field name="hero-link" type="text" default="" label="HERO_VIDEO_LINK_LABEL" description="HERO_VIDEO_LINK_DESC"></field>
+      <field name="hero-icon" type="text" default="" label="HERO_VIDEO_ICON_LABEL" description="HERO_VIDEO_ICON_DESC"></field>   
+      <field name="hero-class" type="list" default="default" label="HERO_VIDEO_CLASS_LABEL" description="HERO_VIDEO_CLASS_DESC">
+         <option value="default">Default</option>
+        <option value="primary">Primary</option>
+      </field>    
+      <field name="hero-action" type="list" default="link" label="HERO_VIDEO_ACTION_LABEL" description="HERO_VIDEO_ACTION_DESC">
+        <option value="lightbox">Lightbox</option>
+        <option value="link">Link</option>
+      </field>       
+      <field name="hero-img" type="media"  default="" label="HERO_IMAGE_LABEL" description="HERO_IMAGE_DESC" />
+    </fieldset>
+  </fields>
+</form>

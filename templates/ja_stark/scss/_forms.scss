@@ -1,0 +1,77 @@
+/**
+* $JA#COPYRIGHT$
+*/
+
+
+// ------------------------------------
+// FORMS
+// ------------------------------------
+
+// Extend style in base
+// --------------------
+@import "../../../plugins/system/t4/themes/base/scss/_forms";
+
+// 
+// Button
+// -----------------------------------
+.btn {
+	padding: $input-btn-padding-y $input-btn-padding-x;
+	border-radius: $btn-border-radius;
+}
+
+.btn-lg {
+  padding: $input-btn-padding-y-lg $input-btn-padding-x-lg;
+  border-radius: $border-radius;
+  font-size: 1.067rem;
+}
+
+// 
+// Textual form controls
+// -----------------------------------
+.form-control, 
+.inputbox {
+	padding: $input-btn-padding-y $input-btn-padding-x;
+	border-radius: $btn-border-radius;
+	height: $input-height;
+}
+ 
+.control-label {  
+  .form-control-feedback {
+  }
+}
+
+form .control-group .controls input[type="radio"], 
+form .control-group .controls input[type="checkbox"] {
+  max-width: unset !important; 
+  width: auto !important;  
+}
+
+form.form-horizontal {    
+  div.control-group {
+    margin-bottom: $spacer;
+  }
+}
+
+// 
+// Input group 
+// ---------------------------
+.input-group-addon {
+  > span {
+  }
+}
+
+
+//  
+// Btn Toolbar
+// --------------------------
+.btn-toolbar {
+  .btn-group + .btn-group {
+    @include media-breakpoint-down(xs) {
+      margin-left: 0;
+
+      .btn {
+        margin-left: 0;
+      }
+    }
+  }
+}

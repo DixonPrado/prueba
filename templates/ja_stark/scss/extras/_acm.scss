@@ -1,0 +1,103 @@
+/**
+* $JA#COPYRIGHT$
+*/
+
+// HERO
+// ---------------------
+
+.acm-hero {
+	.hero-content {
+		overflow: hidden;
+	}
+
+	&.style-dark {
+		color: $white;
+
+		.hero-intro {
+			color: rgba(255,255,255,0.75);
+		}
+
+		.hero-heading {
+			color: $white;
+		}
+	}
+
+	.hero-btn-actions {
+		margin-top: 4.375rem;
+	}
+
+	.hero-heading,
+	.hero-img {
+		margin-top: 0;
+		margin-bottom: 2.5rem;
+	}
+
+	h2.hero-heading {
+		font-weight: normal;
+		font-family: "louis_george_caferegular";
+	}
+
+	&.style-2 {
+		.hero-content {
+			margin-top: $grid-gutter-width;
+			margin-bottom: $grid-gutter-width;
+		}
+
+		.hero-heading {
+			margin-bottom: $spacer;
+
+			a {
+				color: $headings-color;
+			}
+		}
+
+		.lead {
+			font-size: $font-size-base;
+		}
+	}
+}
+
+// VIDEO
+// -------------------
+.acm-hero { 
+	height: 100%;
+	background-size: cover !important;
+
+	.btn.html5lightbox,
+	.btn.html5link {
+		color: $white;
+		background: none;
+		border-radius: 50%;
+		width: 150px;
+		height: 150px;
+		line-height: 146px;
+		padding: 0;
+		border: 2px solid $white;
+		text-align: center;
+		margin-top: $spacer*2;
+		margin-bottom: $spacer*2;
+
+		&.default {
+		}
+
+		&.primary {
+			background: $primary;
+			width: 90px;
+			height: 90px;
+			line-height: 90px;
+			border: 0;
+		}
+	}
+
+	@include media-breakpoint-up(lg) {
+		.btn.html5lightbox,
+		.btn.html5link {
+			transform: translate(-50%,-50%);
+			left: 50%; 
+			top: 50%;
+			position: absolute;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+}

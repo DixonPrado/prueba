@@ -1,0 +1,1067 @@
+/**
+* $JA#COPYRIGHT$
+*/
+
+// ------------------------------------
+// Joomla! specific styles
+// ------------------------------------
+
+// Extend style in base
+// --------------------
+@import "../../../plugins/system/t4/themes/base/scss/_joomla";
+
+//
+// Generic Styles
+// -------------------------
+
+// Article Titles
+// -------------------------
+h2.item-title,
+.item-title h2 {
+  font-size: $h2-font-size;
+
+  a {
+    color: $body-color;
+
+    &:hover, &:active, &:focus {
+      border-bottom: 1px solid $body-color;
+      color: $body-color;
+    }
+  }
+}
+
+// Page Header
+.page-header,
+.categories-list {
+  h1 {
+    font-size: $font-size-base;
+    font-weight: $font-weight-bold;
+  }
+
+  h2 {
+    font-size: $h3-font-size;
+    margin: 0;
+
+    a {
+      color: $body-color;
+      &:hover, &:focus, &:active {
+        color: $link-hover-color;
+      }
+    }
+  }
+}
+
+
+// Article Aside
+// -------------------------
+.article-info {
+  a {
+    // Link states
+    &:hover, &:focus, &:active {
+    }
+  }
+
+  .article-info-term {
+  }
+
+  dd {
+    > div {
+    }
+  }
+
+}
+
+// Author
+.createdby {
+}
+
+// Category Name
+.category-name {
+}
+
+// URL
+.article-url {
+}
+
+// Publish Date
+.published {
+  time {
+  }
+}
+
+// Modified Date
+.modifydate {
+}
+
+// Hits
+.hits {
+}
+
+// Article Desciption
+.contentdescription {
+}
+
+.contentdescription p {
+}
+
+// Content rating
+.content_rating {
+}
+
+.content_vote {
+}
+
+
+// Article Tools
+// -------------------------
+.icons {
+  .btn {
+    .caret {
+    }
+  }
+
+  .icon-cog {
+  }
+
+  .dropdown-menu {
+    a {
+      border-bottom: 1px solid $border-color;
+      color: $gray-700;
+
+      &:hover, &:focus, &:active {
+        background-color: $gray-100;
+        color: $link-hover-color;
+      }
+    }
+  }
+}
+
+
+// Tags
+// -------------------------
+.tags {
+  > li {
+
+    > a {
+    }
+
+    .badge-info {
+      color: $white;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+
+.mod-articles-category-tags {
+  margin-bottom: $spacer;
+}
+
+.com-tags-tag.tag-category {
+  .filters {
+  }
+
+  .category {
+  }
+
+  .item-tag-title {
+    font-size: inherit;
+  }
+}
+
+
+// Article Images
+// -------------------------
+.item-image {
+  img {
+  }
+}
+
+// Float Left Image
+.pull-left.item-image,
+.item-image.pull-left {
+}
+
+// Float right Image
+.pull-right.item-image,
+.item-image.pull-right {
+}
+
+// Image caption
+.img_caption img {
+}
+
+div.img_caption {
+
+  p.img_caption {
+  }
+}
+
+figure {
+  &.pull-left {
+  }
+
+  &.pull-right {
+  }
+
+  figcaption {
+  }
+}
+
+// Article Index
+// -----------
+.article-index {
+  h3 {
+  }
+
+  ul {
+  }
+}
+
+.com-content-article__body {
+  .pagenavcounter {
+  }
+
+  .pager {
+    ul {
+
+      li {
+      }
+    }
+  }
+
+  // Slider style
+  .pane-sliders {
+    .panel {
+      border: 1px solid $border-color;
+
+      h3.title {
+        background-color: $gray-100;
+        font-size: $font-size-base;
+
+        &.pane-toggler-down {
+          border-bottom: 1px solid $border-color;
+        }
+
+        a {
+          &:hover, &:focus, &:active {
+          }
+        }
+      }
+
+      .content {
+      }
+    }
+  }
+
+  // Tabs style
+  dl.tabs {
+    border-bottom: 1px solid $border-color;
+
+    dt {
+      border: 1px solid $border-color;
+      border-radius: 3px 3px 0 0;
+
+      &.open {
+        border-bottom: 1px solid $white;
+      }
+
+      h3 {
+
+        a {
+          color: $body-color;
+
+          &:hover, &:focus, &:active {
+            color: $link-hover-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Read more
+// -----------
+.readmore {
+
+  .btn {
+    padding: $input-btn-padding-y $input-btn-padding-x;
+
+    // Link States
+    &:hover, &:active, &:focus {
+    }
+
+    // The Arrow
+    .icon-chevron-right {
+    }
+  }
+}
+
+// Items More
+// -----------
+.items-more {
+  .nav-tabs {
+    > li {
+    }
+
+    > li > a {
+      background: $gray-100;
+      color: $body-color;
+
+      // Link States
+      &:hover, &:active, &:focus {
+        background: $gray-800;
+        color: $white;
+      }
+    }
+  }
+}
+
+
+//
+// List Layouts
+// -------------------------
+
+// Leading Items
+// -------------
+.items-leading {
+  @include clearfix();
+
+  // Single Item
+  .col {
+    .item-image {
+    }
+
+    p {
+    }
+  }
+}
+
+
+// Intro Items
+// -------------
+.items-row {
+
+  // Single Item
+  .item {
+
+    // Styles on Desktop
+    @include media-breakpoint-up(md) {
+    }
+
+    .item-title {
+    }
+
+    .item-image {
+    }
+  }
+
+}
+
+// Blog Layout
+// -----------
+.blog,
+.blog-featured {
+  .items-leading {
+    .blog-item {
+    }
+  }
+
+  .blog-items {
+    .blog-item {
+    }
+  }
+
+  // The Article
+  .blog-item {}
+  .blog-item-content {
+    @include clearfix();
+
+    @include media-breakpoint-down(md) {
+      .pull-left.item-image,
+      .item-image.pull-right {
+        margin-right: 0;
+        float: none !important;
+      }
+    }
+  }
+
+  .item-content {
+    .page-header > h2 {
+      font-size: $h5-font-size;
+      color: $headings-color;
+      font-weight: normal;
+      margin-bottom: $spacer;
+
+      a {
+        color: $headings-color;
+      }
+    }
+  }
+}
+
+// Reset the duplicate container inside t4-body-main
+.blog-featured {
+}
+
+
+// Projects Layout
+// ---------------
+.projects {
+  .item-image {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+
+    img {
+      min-width: 100%;
+    }
+
+    & + .item-content {
+      display: none;
+    }
+  }
+
+  .item-content-wrap {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: $grid-gutter-width;
+    transition: 350ms all;
+    transform: scale(1);
+    z-index: 1;
+
+    &:hover {
+      transform: scale(1.1);
+      z-index: 2;
+
+      .item-info {
+        opacity: 1;
+      }
+    }
+  }
+
+  .item-info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    text-align: left;
+    color: rgba(255,255,255,0.9);
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    opacity: 0;
+    transition: 350ms all;
+
+    .inner {
+      text-align: left;
+    }
+
+    .page-header h2 {
+      color: $white;
+      font-size: $h5-font-size;
+      margin-bottom: $spacer*1.5;
+      display: block;
+
+      a {
+        color: $white;
+      }
+    }
+
+    .btn {
+      margin-top: $spacer*1.5;
+      display: inline-block;
+    }
+
+    &::before {
+      content: "";
+      background: linear-gradient(rgba(0, 0, 0, .0), rgba(0, 0, 0, .8));
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      opacity: 0.9;
+    }
+  }
+}
+
+
+//
+// Article Page
+// -------------------------
+.item-page {
+}
+
+// Project Page
+.project-page {
+  .page-header {
+    h2 {
+      margin-bottom: $spacer;
+    }
+  }
+}
+
+
+//
+// Generic Category
+// -------------------------
+.category-desc {
+  border: 1px solid $border-color;
+  color: $text-muted;
+
+  > img {
+  }
+}
+
+.category {
+
+  li {}
+
+  .list {}
+
+  .list-title {
+    a {
+      color: $gray-700;
+      &:hover, &:focus, &:active {
+        color: $link-hover-color;
+      }
+    }
+  }
+
+  // Striped Style
+  &.row-striped,
+  &.list-striped {
+  }
+
+}
+
+// Filters
+// T4: Joomla! use <fieldset> that break "display: flex".
+// So we need to re-style the layout without using BS "btn-toolbar" styles
+// More info here: https://bugs.chromium.org/p/chromium/issues/detail?id=262679
+.filters {
+  legend {
+  }
+
+  legend,
+  .btn-group,
+  .input-group {
+  }
+
+  .input-group + .btn-group {
+  }
+}
+
+//
+// Categories List
+// -------------------------
+.categories-list {
+
+  .page-header {
+
+    // Badges
+    .badge {
+    }
+
+    // Collapse Toggle
+    .btn {
+    }
+  }
+
+  // Indent Sub Categories
+  .page-header + .fade,
+  .fade > div {
+  }
+
+  // Category Desc
+  .category-desc {
+  }
+}
+
+
+//
+// Category List
+// -------------------------
+.category-list {
+}
+
+.content-category {
+  .control-group {
+  }
+
+  .filters {
+  }
+
+  // Sub Cat
+  .cat-children {
+    border-top: 1px solid $border-color;
+
+    > h3 {
+    }
+
+    .category-desc {
+    }
+
+    > div {
+      border-bottom: 1px solid $border-color;
+    }
+  }
+}
+
+
+//
+// Contact Category
+// -------------------------
+.contact-category {
+  h2 {}
+
+  .category-desc {}
+
+  // T4: Joomla! add ".row" to the <li>. So we need to make <ul> ".container"
+  .category {
+    @include make-container();
+  }
+
+  .list-title {
+    a {
+      font-weight: $font-weight-bold;
+    }
+  }
+}
+
+//
+// Contacts
+// -------------------------
+.contact {
+  .page-header {
+  }
+
+  .dl-horizontal > dt {
+    display: none;
+  }
+
+  dd {
+    margin-left: 0;
+  }
+
+  #slide-contact {
+    .card {
+    }
+
+    .card-header {
+      background-color: transparent;
+      margin-bottom: -1px;
+      padding: 0;
+
+      &:hover {
+        background-color: $gray-100;
+      }
+
+      .btn {
+        color: $gray-600;
+        display: block;
+        font-weight: $font-weight-bold;
+        padding: $spacer/1.5 $spacer;
+        text-align: left;
+        width: 100%;
+
+        &:hover, &:focus, &:active {
+          color: $link-hover-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  // Contact Form
+  #contact-form {
+    .form-group {
+      margin-left: -$grid-gutter-width/2;
+      margin-right: -$grid-gutter-width/2;
+      display: flex;
+      flex-wrap: wrap;
+
+	  @include media-breakpoint-up(sm) {
+        .control-label {
+          float: none;
+        }
+      }
+
+      @include media-breakpoint-down(sm) {
+        .control-label {
+          margin-top: $spacer/2;
+        }
+      }
+    }
+
+    input[type="email"],
+    input[type="text"],
+    #jform_contact_message {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    fieldset.default {
+      padding-left: $grid-gutter-width/2;
+      padding-right: $grid-gutter-width/2;
+
+      .controls {
+        margin-left: 0;
+      }
+    }
+
+    .checkbox {
+      padding-left: 0;
+    }
+  }
+
+  // Plain
+  .plain-style {
+    .contact-information {
+      padding-right: $grid-gutter-width*2;
+    }
+
+    .contact-form-wrap {
+      @include media-breakpoint-up(md) {
+        border-left: 1px solid $border-color;
+        padding-left: $grid-gutter-width*2;
+      }
+    }
+
+    .contact-address {
+      .fa {
+        color: $body-color;
+        background: $gray-200;
+        border-radius: 3px;
+        margin-right: $spacer/2;
+        line-height: 24px;
+        vertical-align: middle;
+        height: $line-height-base * $font-size-base;
+        width: $line-height-base * $font-size-base;
+        font-size: $font-size-sm;
+        text-align: center;
+      }
+    }
+
+    .contact-image,
+    .contact-info {
+      margin-bottom: $spacer;
+    }
+
+    .contact-title h2,
+    .title-link h3,
+    .title-info h2,
+    .contact-articles-title h2 {
+      padding-bottom: 0;
+      text-transform: none;
+      border-bottom: 0;
+      margin: 0 0 $spacer 0;
+      color: $secondary;
+      font-size: $font-size-base;
+      font-weight: bold;
+
+      &::after {
+        content: ".";
+      }
+    }
+
+    legend {
+      font-size: $font-size-xs;
+    }
+  }
+
+  // Contact Link
+  .contact-links {
+    margin-top: $spacer;
+
+    ul {
+      border: none;
+
+      li {
+        display: inline-block;
+        margin-right: $spacer * .75;
+        margin-bottom: $spacer / 2;
+
+        a {
+          font-size: inherit;
+          font-weight: 400;
+          line-height: 1;
+          padding: 0 !important;
+          color: $body-color;
+
+          span {
+            color: $body-color;
+            background: $gray-200;
+            border-radius: 3px;
+            margin-right: $spacer/2;
+            line-height: 24px;
+            vertical-align: middle;
+            height: $line-height-base * $font-size-base;
+            width: $line-height-base * $font-size-base;
+            font-size: $font-size-sm;
+
+            &:before {
+              display: block;
+              text-align: center;
+            }
+          }
+
+          &:hover, &:focus, &:active {
+            background: $white;
+            color: $black;
+            border-color: transparent;
+            text-decoration: none;
+
+            > span {
+              background: $primary;
+              border-color: $primary;
+              color: $white;
+            }
+
+            .fa-google-plus {
+              background: $brand-google;
+              border-color: $brand-google;
+
+            }
+
+            .fa-facebook {
+              background: $brand-facebook;
+              border-color: $brand-facebook;
+            }
+
+            .fa-twitter {
+              background: $brand-twitter;
+              border-color: $brand-twitter;
+            }
+
+            .fa-vimeo {
+              background: #1ab7ea;
+              border-color: #1ab7ea;
+            }
+
+            .fa-youtube {
+              background: $brand-youtube;
+              border-color: $brand-youtube;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Contact Articles
+  .contact-articles-title {
+    margin-top: $spacer;
+  }
+
+  .contact-articles {
+    .nav-tabs {
+      border-bottom: 0;
+      display: block;
+
+      li {
+        display: block;
+
+        a {
+          color: $gray-800;
+        }
+      }
+    }
+  }
+}
+
+.com_contact.layout-default {
+  .t4-wrapper-inner,
+  .t4-content,
+  .t4-content-inner,
+  .t4-mainbody,
+  .t4-mainbody .t4-section-inner,
+  .t4-mainbody .t4-section-inner .col,
+  .contact .contact-form-wrap {
+    position: static;
+  }
+}
+
+//
+// Newsfeed
+// -------------------------
+.newsfeed {
+  .feed-description {
+  }
+
+  > ol {
+  }
+
+  > ol > li {
+  }
+
+  .feed-link {
+  }
+
+  .feed-item-description {
+    figure {
+    }
+
+    .lead {
+    }
+
+    .feedflare {
+    }
+  }
+}
+
+
+//
+// Newsfeed
+// -------------------------
+.newsfeed-category {
+  #filter-search {
+  }
+
+  .category {
+    li {
+    }
+  }
+}
+
+
+// Pagination
+.pagination-wrap {
+  .counter {
+  }
+}
+
+
+//
+// Search
+// -------------------------
+.search {
+
+  .btn-toolbar {
+    .btn {
+
+    }
+
+    .btn-group {
+      margin-top: $spacer;
+    }
+  }
+
+  .searchintro {}
+
+  fieldset {
+    legend {
+    }
+  }
+
+  .ordering-box {
+    @extend .d-flex;
+    @extend .flex-row;
+    @extend .align-items-baseline;
+
+    label {}
+
+    select {
+    }
+  }
+
+  .form-limit {}
+
+  //
+  // The Results
+  .search-results,
+  #search-results {
+    border-top: 1px solid $border-color;
+
+    .result-title {
+    }
+
+    .result-category {}
+    .result-text {
+    }
+
+    .result-created {
+      color: $gray;
+    }
+  }
+
+}
+
+.highlight {
+  background: $yellow;
+  padding: 1px;
+}
+
+//
+// The Empty Result
+#search-result-empty {
+}
+
+// Smart Search
+// -------------------------
+div#finder-filter-window .filter-branch .finder-selects {
+  float: left;
+}
+
+.js-finder-searchform .control-group .control-label {
+	float: none;
+}
+
+
+//
+// Tag Category
+// -------------------------
+.tag-category {
+  .category h3 {
+  }
+}
+
+.input-group-btn {
+  .btn + .btn {
+  }
+}
+
+//
+// Login page
+// --------------------------
+.com-users-login {
+  .com-users-login__remember {
+    .controls {
+      display: block;
+    }
+  }
+}
+
+//
+// Edit Article
+// --------------------------
+#jform_title {
+}
+
+
+//
+// Privacy
+// --------------------------
+.request-confirm {
+  legend {
+    margin: 0 0 $spacer;
+    padding-bottom: $spacer;
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+//
+// Users
+// --------------------------
+.com-users-profile {
+  .btn-toolbar {
+    padding-left: 0;
+  }
+}

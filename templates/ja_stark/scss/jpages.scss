@@ -1,0 +1,146 @@
+/**
+* $JA#COPYRIGHT$
+*/
+
+
+// Variables.
+// Grays
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #868e96;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+// T4: Add more grays variables for easy styling
+$gray:          $gray-500;
+$gray-dark:     $gray-600;
+$gray-darker:   $gray-800;
+$gray-light:    $gray-400;
+$gray-lighter:  $gray-200;
+
+// Accent colors
+$blue:      #2196F3;
+$indigo:    #3F51B5;
+$purple:    #9C27B0;
+$pink:      #E91E63;
+$red:       #F44336;
+$orange:    #FF9800;
+$yellow:    #FDD835;
+$green:     #4CAF50;
+$teal:      #009688;
+$cyan:      #00BCD4;
+
+$spacer: 1rem;
+
+// 
+// T4 ERROR PAGE
+// ------------------------
+.t4-error-page {
+  background-color: $gray-100;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: $gray-700;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+
+  h1 {
+    margin: 0 0 $spacer;
+    font-size: 1.333rem;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.733rem;
+    }
+  }
+
+  .t4-error-msg {
+    background-color: $white;
+    box-shadow: 0 3px 3px rgba(0,0,0, 0.075);
+    border-radius: 7px;
+    padding: $spacer*2;
+    margin: 0 $spacer;
+    min-height: 180px;
+    margin-top: calc(100vh / 2);
+    max-width: 576px;
+    position: relative;
+    text-align: center;
+    transform: translateY(-50%);
+
+    @media screen and (min-width: 768px) {
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: $spacer*8;
+      text-align: left;
+    }
+  }
+
+  img {
+    opacity: .1;
+    margin: 0 auto;
+    width: $spacer*5;
+
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      left: $spacer*2;
+      top: $spacer*2.5;
+      margin: 0;
+    }
+  }
+
+  .error-message {
+    margin-top: 0;
+    margin-bottom: $spacer*2;
+  }
+
+  code {
+    background-color: #FEF3F8;
+    border-radius: 3px;
+    color: #e83e8c;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9333rem;
+    padding: 0 5px;
+  }
+
+  .cta-wrap {    
+    h3 {
+      color: $gray-600;
+      font-size: 0.8rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+      margin: 0 0 $spacer/2 0;
+      text-transform: uppercase;
+
+      @media screen and (min-width: 768px) {
+        display: inline-block;
+        margin: 0 $spacer/2 0 0;
+      }
+    }
+
+    a {
+      background: $gray-200;
+      border-radius: 25px;
+      color: $gray-700;
+      display: inline-block;
+      font-size: 0.8rem;
+      margin: 5px $spacer/4;
+      letter-spacing: 1px;
+      padding: $spacer/3 $spacer;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.25s ease-in;
+
+      &:hover, &:focus, &:active {
+        background-color: $blue;        
+        color: $white;
+      }
+    }
+  }
+}
