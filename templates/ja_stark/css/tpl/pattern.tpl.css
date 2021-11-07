@@ -33,7 +33,7 @@
 }
 
 .layout-home .t4-sticky.__class {
-	background-color: transparent;
+	background-color: __background_color;
 }
 
 .not-at-top .t4-sticky.__class {

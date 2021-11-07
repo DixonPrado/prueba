@@ -196,7 +196,7 @@
 	opacity: 1;
 }
 #t4-hero .bg-overlay-image {
-	background-image: url(/ja_works/joomla4/ja_stark/images/demo/hero/hero-1.jpeg);
+	background-image: url(/cuerna/images/demo/hero/hero-1.jpeg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
@@ -208,7 +208,7 @@
 	opacity: 1;
 }
 #t4-section-1 .bg-overlay-image {
-	background-image: url(/ja_works/joomla4/ja_stark/images/demo/bg/section-1.png);
+	background-image: url(/cuerna/images/demo/bg/section-1.png);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
@@ -225,7 +225,7 @@
 	opacity: 1;
 }
 #t4-section-3 .bg-overlay-image {
-	background-image: url(/ja_works/joomla4/ja_stark/images/demo/bg/section-2.png);
+	background-image: url(/cuerna/images/demo/bg/section-2.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
@@ -244,7 +244,7 @@
 	opacity: 1;
 }
 #t4-section-5 .bg-overlay-image {
-	background-image: url(/ja_works/joomla4/ja_stark/images/demo/bg/section-5.png);
+	background-image: url(/cuerna/images/demo/bg/section-5.png);
 	background-attachment: fixed;
 }
 
@@ -287,7 +287,15 @@
 	opacity: 0.5;
 }
 /**
-* $JA#COPYRIGHT$
+ * ------------------------------------------------------------------------
+ * JA Stark Template
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2018 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
 */
 :root {
   --primary: #2e3d96;
@@ -512,4 +520,4 @@ h6, .h6 {
 }
 #t4-section-7 .t4-section-module .module-title {
   color: #22cc99; 
-}
+}
