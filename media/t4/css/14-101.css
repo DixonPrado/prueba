@@ -330,11 +330,7 @@
 	opacity: 1;
 }
 #t4-hero .bg-overlay-image {
-<<<<<<< HEAD
 	background-image: url(/prueba/images/demo/hero/hero-1.jpeg);
-=======
-	background-image: url(/cuerna/prueba/images/demo/hero/hero-1.jpeg);
->>>>>>> 0bdc68c13031be316c33612f2816ebe3c7f69ff3
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
@@ -346,11 +342,7 @@
 	opacity: 1;
 }
 #t4-section-1 .bg-overlay-image {
-<<<<<<< HEAD
 	background-image: url(/prueba/images/demo/bg/section-1.png);
-=======
-	background-image: url(/cuerna/prueba/images/demo/bg/section-1.png);
->>>>>>> 0bdc68c13031be316c33612f2816ebe3c7f69ff3
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
@@ -367,11 +359,7 @@
 	opacity: 1;
 }
 #t4-section-3 .bg-overlay-image {
-<<<<<<< HEAD
 	background-image: url(/prueba/images/demo/bg/section-2.png);
-=======
-	background-image: url(/cuerna/prueba/images/demo/bg/section-2.png);
->>>>>>> 0bdc68c13031be316c33612f2816ebe3c7f69ff3
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
@@ -390,11 +378,7 @@
 	opacity: 1;
 }
 #t4-section-5 .bg-overlay-image {
-<<<<<<< HEAD
 	background-image: url(/prueba/images/demo/bg/section-5.png);
-=======
-	background-image: url(/cuerna/prueba/images/demo/bg/section-5.png);
->>>>>>> 0bdc68c13031be316c33612f2816ebe3c7f69ff3
 	background-attachment: fixed;
 }
 
@@ -435,6 +419,34 @@
 
 #t4-footnav .bg-overlay {
 	opacity: 0.5;
+}
+	#t4-footnav{
+		margin:;
+		padding:;
+}
+@media only screen and (min-width: 576px) {
+	#t4-footnav{
+		margin:;
+		padding:;
+}
+}
+@media only screen and (min-width: 768px) {
+	#t4-footnav{
+		margin:;
+		padding:;
+}
+}
+@media only screen and (min-width: 992px) {
+	#t4-footnav{
+		margin:;
+		padding:;
+}
+}
+@media only screen and (min-width: 1200px) {
+	#t4-footnav{
+		margin:;
+		padding:;
+}
 }
 /**
  * ------------------------------------------------------------------------
