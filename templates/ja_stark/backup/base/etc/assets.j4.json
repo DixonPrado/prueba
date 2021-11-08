@@ -1,0 +1,22 @@
+{
+  "name": "ja template",
+  "version": "1.0.0",
+  "description": "Assets builtin T4 Base",
+  "license": "GPL-2.0+",
+  "assets": [
+  {
+    "name": "html5lightbox",
+    "type": "script",
+    "uri": "templates/ja_stark/js/html5lightbox/html5lightbox.js"
+  },
+  {
+    "name": "Animation",
+    "type": "style",
+    "uri": "templates/ja_stark/css/animate.min.css"
+  },
+  {
+    "name": "Animation",
+    "type": "script",
+    "uri": "templates/ja_stark/js/inview.js"
+  }]
+}

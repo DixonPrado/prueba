@@ -1,4 +1,28 @@
 
+:root{
+--color-primary:#2e3d96;
+--color-secondary:#22cc99;
+--color-success:#28a745;
+--color-info:#17a2b8;
+--color-warning:#ffc107;
+--color-danger:#dc3545;
+--color-light:#f8f9fa;
+--color-dark:#111111;
+--color-white:#ffffff;
+--color-black:#000000;
+--body-bg-color:rgba(255, 255, 255, 0);
+--body-text-color:#888888;
+--body-link-color:#22cc99;
+--body-link-hover-color:#22cc99;
+--mainnav-text-color:#212529;
+--mainnav-link-color:#212529;
+--mainnav-link-hover-color:#007bff;
+--mainnav-link-active-color:#007bff;
+--footer-bg-color:#212529;
+--footer-text-color:#6c757d;
+--footer-link-color:#6c757d;
+--footer-link-hover-color:#ffffff;
+}
 /* Pattern: Dark */
 .t4-palette-dark {
 	color: #f8f9fa;
@@ -29,7 +53,7 @@
 	color: #22cc99;
 }
 .layout-home .t4-sticky.t4-palette-dark {
-	background-color: transparent;
+	background-color: #111111;
 }
 .not-at-top .t4-sticky.t4-palette-dark {
 	background-color: #111111;
@@ -65,7 +89,7 @@
 	color: #22cc99;
 }
 .layout-home .t4-sticky.t4-palette-primary {
-	background-color: transparent;
+	background-color: #2e3d96;
 }
 .not-at-top .t4-sticky.t4-palette-primary {
 	background-color: #2e3d96;
@@ -101,7 +125,7 @@
 	color: #22cc99;
 }
 .layout-home .t4-sticky.t4-palette-gray {
-	background-color: transparent;
+	background-color: #f8f9fa;
 }
 .not-at-top .t4-sticky.t4-palette-gray {
 	background-color: #f8f9fa;
@@ -137,10 +161,82 @@
 	color: #22cc99;
 }
 .layout-home .t4-sticky.t4-palette-transparent {
-	background-color: transparent;
+	background-color: rgba(255, 255, 255, 0);
 }
 .not-at-top .t4-sticky.t4-palette-transparent {
 	background-color: rgba(255, 255, 255, 0);
+}
+
+/* Pattern: Cuerna logo */
+.t4-palette-cuerna_logo {
+	color: #000000;
+	background-color: #7c1f34;
+}
+.t4-palette-cuerna_logo a:not(.btn) {
+	color: #1a61ab;
+}
+.t4-palette-cuerna_logo a:not(.btn):hover {
+	color: #ffffff;
+}
+/* Heading */
+.t4-palette-cuerna_logo h1,
+.t4-palette-cuerna_logo h2,
+.t4-palette-cuerna_logo h3,
+.t4-palette-cuerna_logo h4,
+.t4-palette-cuerna_logo h5,
+.t4-palette-cuerna_logo h6 {
+	color: #ffffff;
+}
+/* Module */
+.t4-palette-cuerna_logo .nav > li > a {
+	color: #1a61ab;
+}
+.t4-palette-cuerna_logo .nav > li > a:hover,
+.t4-palette-cuerna_logo .nav > li > a:focus,
+.t4-palette-cuerna_logo .nav > li > a:active {
+	color: #ffffff;
+}
+.layout-home .t4-sticky.t4-palette-cuerna_logo {
+	background-color: #7c1f34;
+}
+.not-at-top .t4-sticky.t4-palette-cuerna_logo {
+	background-color: #7c1f34;
+}
+
+/* Pattern: Cuerna menu */
+.t4-palette-cuerna_menu {
+	color: #000000;
+	background-color: #f09e39;
+}
+.t4-palette-cuerna_menu a:not(.btn) {
+	color: #1a61ab;
+}
+.t4-palette-cuerna_menu a:not(.btn):hover {
+	color: #ffffff;
+}
+/* Heading */
+.t4-palette-cuerna_menu h1,
+.t4-palette-cuerna_menu h2,
+.t4-palette-cuerna_menu h3,
+.t4-palette-cuerna_menu h4,
+.t4-palette-cuerna_menu h5,
+.t4-palette-cuerna_menu h6 {
+	color: #ffffff;
+}
+/* Module */
+.t4-palette-cuerna_menu .nav > li > a {
+	color: #1a61ab;
+}
+.t4-palette-cuerna_menu .nav > li > a:hover,
+.t4-palette-cuerna_menu .nav > li > a:focus,
+.t4-palette-cuerna_menu .nav > li > a:active {
+	color: #ffffff;
+}
+.layout-home .t4-sticky.t4-palette-cuerna_menu {
+	background-color: #f09e39;
+}
+.not-at-top .t4-sticky.t4-palette-cuerna_menu {
+	background-color: #f09e39;
 }
 
 /* Section: topbar */
@@ -150,11 +246,7 @@
 }
 
 /* Section: header */
-#t4-header {
-	position: sticky;
-	top: 0;
-	z-index: 10;
-}
+
 #t4-header .bg-overlay {
 	opacity: 0.5;
 }
@@ -164,6 +256,73 @@
 	background-position: 50% 50%;
 	background-attachment: fixed;
 }
+	#t4-header{
+		margin:;
+		padding:;
+}
+@media only screen and (min-width: 576px) {
+	#t4-header{
+		margin:;
+		padding:;
+}
+}
+@media only screen and (min-width: 768px) {
+	#t4-header{
+		margin:;
+		padding:;
+}
+}
+@media only screen and (min-width: 992px) {
+	#t4-header{
+		margin:;
+		padding:;
+}
+}
+@media only screen and (min-width: 1200px) {
+	#t4-header{
+		margin:;
+		padding:;
+}
+}
+
+/* Section: Menu */
+#t4-menu {
+	position: -webkit-sticky !important;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+#t4-menu .bg-overlay {
+	opacity: 0.5;
+}
+	#t4-menu{
+		margin:;
+		padding:;
+}
+@media only screen and (min-width: 576px) {
+	#t4-menu{
+		margin:;
+		padding:;
+}
+}
+@media only screen and (min-width: 768px) {
+	#t4-menu{
+		margin:;
+		padding:;
+}
+}
+@media only screen and (min-width: 992px) {
+	#t4-menu{
+		margin:;
+		padding:;
+}
+}
+@media only screen and (min-width: 1200px) {
+	#t4-menu{
+		margin:;
+		padding:;
+}
+}
 
 /* Section: hero */
 
@@ -171,7 +330,7 @@
 	opacity: 1;
 }
 #t4-hero .bg-overlay-image {
-	background-image: url(/works/ja_stark_rtl/images/demo/hero/hero-1.jpeg);
+	background-image: url(/cuerna/images/demo/hero/hero-1.jpeg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
@@ -183,7 +342,7 @@
 	opacity: 1;
 }
 #t4-section-1 .bg-overlay-image {
-	background-image: url(/works/ja_stark_rtl/images/demo/bg/section-1.png);
+	background-image: url(/cuerna/images/demo/bg/section-1.png);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
@@ -200,7 +359,7 @@
 	opacity: 1;
 }
 #t4-section-3 .bg-overlay-image {
-	background-image: url(/works/ja_stark_rtl/images/demo/bg/section-2.png);
+	background-image: url(/cuerna/images/demo/bg/section-2.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
@@ -219,7 +378,7 @@
 	opacity: 1;
 }
 #t4-section-5 .bg-overlay-image {
-	background-image: url(/works/ja_stark_rtl/images/demo/bg/section-5.png);
+	background-image: url(/cuerna/images/demo/bg/section-5.png);
 	background-attachment: fixed;
 }
 
@@ -262,16 +421,17 @@
 	opacity: 0.5;
 }
 /**
- *------------------------------------------------------------------------------
- * @package       T4_Blank - Free Template for Joomla!
- *------------------------------------------------------------------------------
- * @copyright     Copyright (C) 2004-2019 JoomlArt.com. All Rights Reserved.
- * @license       GNU General Public License version 2 or later; see LICENSE.txt
- * @authors       JoomlArt
- *------------------------------------------------------------------------------
-**/
+ * ------------------------------------------------------------------------
+ * JA Stark Template
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2018 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+*/
 :root {
-  /* brand colors */
   --primary: #2e3d96;
   --secondary: #22cc99;
   --success: #28a745;
@@ -280,304 +440,213 @@
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #111111;
-  --dark: #111111;
-  --body-bg-color: rgba(255, 255, 255, 0);
-  --body-text-color: #888888;
-  --link-color: #22cc99;
-  --link-hover-color: #22cc99;
-  --font-family-base: louis_george_caferegular;
-  --font-size-root: 16px;
-  --line-height-base: 1.56;
-  --letter-spacing: normal;
-  --heading-font-family: louis_george_cafebold;
-  --heading-line-height: 1.4;
-  --heading-letter-spacing: normal;
-  --h1-font-size: 60px;
-  --h2-font-size: 32px;
-  --h3-font-size: 28px;
-  --h4-font-size: 24px;
-  --h5-font-size: 20px;
-  --h6-font-size: 16px;
 }
 /* for megamenu animation duration */
 .t4-megamenu.animate .dropdown.animating > .dropdown-menu {
-  transition-duration: 400ms;
+  -webkit-transition-duration: 400ms;
+  -o-transition-duration: 400ms;
+  transition-duration: 400ms; 
 }
-
-/**
-* $JA#COPYRIGHT$
-*/
-:root {
-  --blue: #2e3d96;
-  --indigo: #3F51B5;
-  --purple: #9C27B0;
-  --pink: #E91E63;
-  --red: #dc3545;
-  --orange: #FF9800;
-  --yellow: #ffc107;
-  --green: #4CAF50;
-  --teal: #009688;
-  --cyan: #22cc99;
-  --primary: #2e3d96;
-  --secondary: #22cc99;
-  --success: #22cc99;
-  --info: #2e3d96;
-  --warning: #ffc107;
-  --danger: #dc3545;
-  --light: #e9ecef;
-  --dark: #343a40;
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "louis_george_caferegular", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --font-family-monospace: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
-
-/**
- *------------------------------------------------------------------------------
- * @package       T4-Blank - Free Template for Joomla!
- *------------------------------------------------------------------------------
- * @copyright     Copyright (C) 2004-2019 JoomlArt.com. All Rights Reserved.
- * @license       GNU General Public License version 2 or later; see LICENSE.txt
- * @authors       JoomlArt
- *------------------------------------------------------------------------------
-**/
-.btn {
-  white-space: normal; }
-
-a[name="top-anchor"] {
-  position: absolute;
-  top: 0;
-  height: 100px;
-  width: 0px;
-  visibility: hidden; }
-
-#back-to-top {
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  display: none; }
-
-.top-away #back-to-top {
-  display: block; }
-
-html {
-  font-size: var(--font-size-root); }
-
 body {
-  background-color: #fff;
-  color: var(--body-text-color);
-  font-family: var(--font-family-base);
-  font-size: var(--font-size-root);
-  font-weight: var(--font-weight-base);
-  line-height: var(--line-height-base);
-  letter-spacing: var(--letter-spacing); }
-
+  background-color: #ffffff;
+  color: #888888;
+  letter-spacing: normal; 
+}
 .t4-content {
-  background-image: var(--body-bg-img);
-  background-repeat: var(--body-bg-img-repeat);
-  background-position: var(--body-bg-img-position);
-  background-size: var(--body-bg-img-size);
-  background-attachment: var(--body-bg-img-attachment);
-  background-color: var(--body-bg-color); }
-
-a {
-  color: var(--link-color); }
-
-a:hover {
-  color: var(--link-hover-color); }
-
+  background-color: rgba(255, 255, 255, 0); 
+}
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font-family);
-  font-weight: var(--heading-font-weight);
-  line-height: var(--heading-line-height);
-  letter-spacing: var(--heading-letter-spacing); }
-
+  font-family: louis_george_cafebold;
+  line-height: 1.4;
+  letter-spacing: normal; 
+}
 h1, .h1 {
-  font-size: var(--h1-font-size); }
-
+  font-size: 60px; 
+}
 h2, .h2 {
-  font-size: var(--h2-font-size); }
-
+  font-size: 32px; 
+}
 h3, .h3 {
-  font-size: var(--h3-font-size); }
-
+  font-size: 28px; 
+}
 h4, .h4 {
-  font-size: var(--h4-font-size); }
-
+  font-size: 24px; 
+}
 h5, .h5 {
-  font-size: var(--h5-font-size); }
-
+  font-size: 20px; 
+}
 h6, .h6 {
-  font-size: var(--h6-font-size); }
-
+  font-size: 16px; 
+}
 /* COLORS
 --------------------------------------- */
 /* Backgrounds Colors */
 .bg-primary {
-  background-color: var(--primary) !important; }
-
+  background-color: #2e3d96 !important; 
+}
 .bg-secondary {
-  background-color: var(--secondary) !important; }
-
+  background-color: #22cc99 !important; 
+}
 .bg-success {
-  background-color: var(--success) !important; }
-
+  background-color: #28a745 !important; 
+}
 .bg-info {
-  background-color: var(--info) !important; }
-
+  background-color: #17a2b8 !important; 
+}
 .bg-warning {
-  background-color: var(--warning) !important; }
-
+  background-color: #ffc107 !important; 
+}
 .bg-danger {
-  background-color: var(--danger) !important; }
-
+  background-color: #dc3545 !important; 
+}
 .bg-light {
-  background-color: var(--light) !important; }
-
+  background-color: #f8f9fa !important; 
+}
 .bg-dark {
-  background-color: var(--dark) !important; }
-
+  background-color: #111111 !important; 
+}
 /* Buttons Colors */
 .btn.btn-primary {
-  background-color: var(--primary) !important;
-  border-color: var(--primary) !important; }
-
+  background-color: #2e3d96 !important;
+  border-color: #2e3d96 !important; 
+}
 .btn.btn-primary:hover {
-  opacity: 0.85; }
-
+  opacity: 0.85; 
+}
 .btn.btn-secondary {
-  background-color: var(--secondary) !important;
-  border-color: var(--secondary) !important; }
-
+  background-color: #22cc99 !important;
+  border-color: #22cc99 !important; 
+}
 .btn.btn-secondary:hover {
-  opacity: 0.85; }
-
+  opacity: 0.85; 
+}
 .btn.btn-success {
-  background-color: var(--success) !important;
-  border-color: var(--success) !important; }
-
+  background-color: #28a745 !important;
+  border-color: #28a745 !important; 
+}
 .btn.btn-success:hover {
-  opacity: 0.85; }
-
+  opacity: 0.85; 
+}
 .btn.btn-info {
-  background-color: var(--info) !important;
-  border-color: var(--info) !important; }
-
+  background-color: #17a2b8 !important;
+  border-color: #17a2b8 !important; 
+}
 .btn.btn-info:hover {
-  opacity: 0.85; }
-
+  opacity: 0.85; 
+}
 .btn.btn-warning {
-  background-color: var(--warning) !important;
-  border-color: var(--warning) !important; }
-
+  background-color: #ffc107 !important;
+  border-color: #ffc107 !important; 
+}
 .btn.btn-warning:hover {
-  opacity: 0.85; }
-
+  opacity: 0.85; 
+}
 .btn.btn-danger {
-  background-color: var(--danger) !important;
-  border-color: var(--danger) !important; }
-
+  background-color: #dc3545 !important;
+  border-color: #dc3545 !important; 
+}
 .btn.btn-danger:hover {
-  opacity: 0.85; }
-
+  opacity: 0.85; 
+}
 .btn.btn-light {
-  background-color: var(--light) !important;
-  border-color: var(--light) !important; }
-
+  background-color: #f8f9fa !important;
+  border-color: #f8f9fa !important; 
+}
 .btn.btn-light:hover {
-  opacity: 0.85; }
-
+  opacity: 0.85; 
+}
 .btn.btn-dark {
-  background-color: var(--dark) !important;
-  border-color: var(--dark) !important; }
-
+  background-color: #111111 !important;
+  border-color: #111111 !important; 
+}
 .btn.btn-dark:hover {
-  opacity: 0.85; }
-
+  opacity: 0.85; 
+}
 /* Text Colors */
 .text-primary {
-  color: var(--primary) !important; }
-
+  color: #2e3d96 !important; 
+}
 .text-secondary {
-  color: var(--secondary) !important; }
-
+  color: #22cc99 !important; 
+}
 .text-success {
-  color: var(--success) !important; }
-
+  color: #28a745 !important; 
+}
 .text-info {
-  color: var(--info) !important; }
-
+  color: #17a2b8 !important; 
+}
 .text-warning {
-  color: var(--warning) !important; }
-
+  color: #ffc107 !important; 
+}
 .text-danger {
-  color: var(--danger) !important; }
-
+  color: #dc3545 !important; 
+}
 .text-light {
-  color: var(--light) !important; }
-
+  color: #f8f9fa !important; 
+}
 .text-dark {
-  color: var(--dark) !important; }
-
+  color: #111111 !important; 
+}
 /* Badage Colors */
 .badge-primary {
-  background-color: var(--primary); }
-
+  background-color: #2e3d96; 
+}
 .badge-secondary {
-  background-color: var(--secondary); }
-
+  background-color: #22cc99; 
+}
 .badge-success {
-  background-color: var(--success); }
-
+  background-color: #28a745; 
+}
 .badge-info {
-  background-color: var(--info); }
-
+  background-color: #17a2b8; 
+}
 .badge-warning {
-  background-color: var(--warning); }
-
+  background-color: #ffc107; 
+}
 .badge-danger {
-  background-color: var(--danger); }
-
+  background-color: #dc3545; 
+}
 .badge-light {
-  background-color: var(--light); }
-
+  background-color: #f8f9fa; 
+}
 .badge-dark {
-  background-color: var(--dark); }
-
+  background-color: #111111; 
+}
 /* TPL
 --------------------------------------- */
 .contact .contact-links ul li a:hover > span, .contact .contact-links ul li a:focus > span, .contact .contact-links ul li a:active > span {
-  background: var(--primary);
-  border-color: var(--primary); }
-
+  background: #2e3d96;
+  border-color: #2e3d96; 
+}
 .t4-section.t4-pattern-primary {
-  background: var(--primary); }
+  background: #2e3d96; 
+}
   .t4-section.t4-pattern-primary .bg-overlay-image::after {
-    background: var(--primary); }
-
+    background: #2e3d96; 
+}
 .acm-hero .btn.html5lightbox.primary,
 .acm-hero .btn.html5link.primary {
-  background: var(--primary); }
-
+  background: #2e3d96; 
+}
 .t4-megamenu .dropdown-menu ul > li a.nav-link:hover,
 .t4-megamenu .dropdown-menu ul > li a.dropdown-item:hover {
-  color: var(--secondary); }
-
+  color: #22cc99; 
+}
 .t4-megamenu .dropdown-menu ul > .active a.nav-link,
 .t4-megamenu .dropdown-menu ul > .active a.dropdown-item {
-  color: var(--secondary); }
-
+  color: #22cc99; 
+}
 .t4-megamenu .dropdown-menu .mega-nav > li a.nav-link:hover,
 .t4-megamenu .dropdown-menu .mega-nav > li a.dropdown-item:hover {
-  color: var(--secondary); }
-
+  color: #22cc99; 
+}
 .t4-megamenu .dropdown-menu .mega-nav > .active a.nav-link,
 .t4-megamenu .dropdown-menu .mega-nav > .active a.dropdown-item {
-  color: var(--secondary); }
-
+  color: #22cc99; 
+}
 .module-title {
-  color: var(--secondary); }
-
+  color: #22cc99; 
+}
 #t4-section-7 .t4-section-module .module-title {
-  color: var(--secondary); }
+  color: #22cc99; 
+}
