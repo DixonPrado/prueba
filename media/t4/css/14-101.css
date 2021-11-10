@@ -330,7 +330,7 @@
 	opacity: 1;
 }
 #t4-hero .bg-overlay-image {
-	background-image: url(/cuerna/prueba/images/demo/hero/hero-1.jpeg);
+	background-image: url(/cuerna/images/demo/hero/hero-1.jpeg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
@@ -342,7 +342,7 @@
 	opacity: 1;
 }
 #t4-section-1 .bg-overlay-image {
-	background-image: url(/cuerna/prueba/images/demo/bg/section-1.png);
+	background-image: url(/cuerna/images/demo/bg/section-1.png);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
@@ -359,7 +359,7 @@
 	opacity: 1;
 }
 #t4-section-3 .bg-overlay-image {
-	background-image: url(/cuerna/prueba/images/demo/bg/section-2.png);
+	background-image: url(/cuerna/images/demo/bg/section-2.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
@@ -378,7 +378,7 @@
 	opacity: 1;
 }
 #t4-section-5 .bg-overlay-image {
-	background-image: url(/cuerna/prueba/images/demo/bg/section-5.png);
+	background-image: url(/cuerna/images/demo/bg/section-5.png);
 	background-attachment: fixed;
 }
 
@@ -478,18 +478,23 @@
 body {
   background-color: #ffffff;
   color: #888888;
+  font-style: inherit;
   letter-spacing: normal; 
 }
 .t4-content {
+  background-repeat: repeat;
+  background-position: left top;
+  background-attachment: scroll;
   background-color: rgba(255, 255, 255, 0); 
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: louis_george_cafebold;
+  font-style: inherit;
   line-height: 1.4;
-  letter-spacing: normal; 
+  letter-spacing: 0px; 
 }
 h1, .h1 {
-  font-size: 60px; 
+  font-size: 40px; 
 }
 h2, .h2 {
   font-size: 32px; 
