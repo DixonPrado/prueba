@@ -324,32 +324,43 @@
 }
 }
 
-/* Section: hero */
-
-#t4-hero .bg-overlay {
-	opacity: 1;
-}
-#t4-hero .bg-overlay-image {
-	background-image: url(/cuerna/images/demo/hero/hero-1.jpeg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 50% 50%;
-}
-
 /* Section: section-1 */
 
 #t4-section-1 .bg-overlay {
-	opacity: 1;
+	opacity: 0.5;
 }
-#t4-section-1 .bg-overlay-image {
-	background-image: url(/cuerna/images/demo/bg/section-1.png);
-	background-repeat: no-repeat;
-	background-position: 0 0;
+	#t4-section-1{
+		margin:;
+		padding:;
+}
+@media only screen and (min-width: 576px) {
+	#t4-section-1{
+		margin:;
+		padding:;
+}
+}
+@media only screen and (min-width: 768px) {
+	#t4-section-1{
+		margin:;
+		padding:;
+}
+}
+@media only screen and (min-width: 992px) {
+	#t4-section-1{
+		margin:;
+		padding:;
+}
+}
+@media only screen and (min-width: 1200px) {
+	#t4-section-1{
+		margin:;
+		padding:;
+}
 }
 
-/* Section: section-2 */
+/* Section: section-4 */
 
-#t4-section-2 .bg-overlay {
+#t4-section-4 .bg-overlay {
 	opacity: 0.5;
 }
 
@@ -359,16 +370,44 @@
 	opacity: 1;
 }
 #t4-section-3 .bg-overlay-image {
-	background-image: url(/cuerna/images/demo/bg/section-2.png);
+	background-image: url(/cuerna/images/118592814_1636576713178152_8483926600525404820_o.jpg#joomlaImage://local-images/118592814_1636576713178152_8483926600525404820_o.jpg?width=2048&height=1365);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
 	background-attachment: fixed;
 }
+	#t4-section-3{
+		margin:;
+		padding:;
+}
+@media only screen and (min-width: 576px) {
+	#t4-section-3{
+		margin:;
+		padding:;
+}
+}
+@media only screen and (min-width: 768px) {
+	#t4-section-3{
+		margin:;
+		padding:;
+}
+}
+@media only screen and (min-width: 992px) {
+	#t4-section-3{
+		margin:;
+		padding:;
+}
+}
+@media only screen and (min-width: 1200px) {
+	#t4-section-3{
+		margin:;
+		padding:;
+}
+}
 
-/* Section: section-4 */
+/* Section: section-6 */
 
-#t4-section-4 .bg-overlay {
+#t4-section-6 .bg-overlay {
 	opacity: 0.5;
 }
 
@@ -378,41 +417,36 @@
 	opacity: 1;
 }
 #t4-section-5 .bg-overlay-image {
-	background-image: url(/cuerna/images/demo/bg/section-5.png);
+	background-image: url(/cuerna/images/cuernavaca-vive.jpg#joomlaImage://local-images/cuernavaca-vive.jpg?width=1280&height=662);
 	background-attachment: fixed;
 }
-
-/* Section: section-6 */
-
-#t4-section-6 .bg-overlay {
-	opacity: 0.5;
+	#t4-section-5{
+		margin:;
+		padding:;
 }
-
-/* Section: section-7 */
-
-#t4-section-7 .bg-overlay {
-	opacity: 1;
+@media only screen and (min-width: 576px) {
+	#t4-section-5{
+		margin:;
+		padding:;
 }
-#t4-section-7 .bg-overlay-image {
-	background-repeat: no-repeat;
-	background-position: 100% 0;
 }
-
-/* Section: section-8 */
-
-#t4-section-8 .bg-overlay {
-	opacity: 1;
+@media only screen and (min-width: 768px) {
+	#t4-section-5{
+		margin:;
+		padding:;
 }
-#t4-section-8 .bg-overlay-image {
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: 0 0;
 }
-
-/* Section: footer */
-
-#t4-footer .bg-overlay {
-	opacity: 0.5;
+@media only screen and (min-width: 992px) {
+	#t4-section-5{
+		margin:;
+		padding:;
+}
+}
+@media only screen and (min-width: 1200px) {
+	#t4-section-5{
+		margin:;
+		padding:;
+}
 }
 
 /* Section: footnav */

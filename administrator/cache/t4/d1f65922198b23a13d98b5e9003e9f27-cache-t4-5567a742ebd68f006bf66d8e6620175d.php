@@ -1,4 +1,4 @@
-<?php die("Access Denied"); ?>#x#a:6:{s:6:"layout";s:6503:"<!DOCTYPE html>
+<?php die("Access Denied"); ?>#x#a:6:{s:6:"layout";s:4681:"<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr">
 
 <head>
@@ -71,68 +71,31 @@
 </div></div>
 </div>
 
-<div id="t4-hero" class="t4-section  t4-hero  t4-section-inview  t4-palette-dark"><div class="bg-overlay bg-overlay-image">&nbsp;</div>
+<div id="t4-section-1" class="t4-section  t4-section-1">
 <div class="t4-section-inner container"><div class="t4-row row">
-<div class="t4-col hero-1 col-12 col-md-6">
-<jdoc:include type="modules" name="hero-1" style="raw" />
+<div class="t4-col recuadro-de-info col-sm col-md-3 semaforo">
+<jdoc:include type="module" name="mod_custom" style="JAxhtml" title="Recuadro de info" />
 </div>
-<div class="t4-col hero-2 col-sm col-md-6 d-none d-sm-none d-md-block d-lg-block d-xl-block">
-<jdoc:include type="modules" name="hero-2" />
+<div class="t4-col slider col-sm col-md-9 slider">
+<jdoc:include type="module" name="mod_djimageslider" style="JAxhtml" title="Slider" />
 </div>
 </div></div>
-</div>
-
-<div id="t4-section-1" class="t4-section  t4-section-1  t4-section-inview gutter-big  t4-palette-primary"><div class="bg-overlay bg-overlay-image">&nbsp;</div>
-<div class="t4-section-inner container"><jdoc:include type="modules" name="section-1" style="T4Section" /></div>
-</div>
-
-<div id="t4-section-2" class="t4-section  t4-section-2  gutter-big t4-section-inview">
-<div class="t4-section-inner container"><jdoc:include type="modules" name="section-2" style="T4Section" /></div>
-</div>
-
-<div id="t4-section-3" class="t4-section  t4-section-3  mod-right t4-section-inview"><div class="bg-overlay bg-overlay-image">&nbsp;</div>
-<div class="t4-section-inner container"><jdoc:include type="modules" name="section-3" style="T4Section" /></div>
 </div>
 
 <div id="t4-section-4" class="t4-section  t4-section-4  container-lg heading-center t4-section-inview">
 <div class="t4-section-inner container"><jdoc:include type="modules" name="section-4" style="T4Section" /></div>
 </div>
 
-<div id="t4-section-5" class="t4-section  t4-section-5  container-md heading-center t4-section-inview  t4-palette-transparent"><div class="bg-overlay bg-overlay-image">&nbsp;</div>
-<div class="t4-section-inner container"><jdoc:include type="modules" name="section-5" style="T4Section" /></div>
+<div id="t4-section-3" class="t4-section  t4-section-3  mod-right t4-section-inview"><div class="bg-overlay bg-overlay-image">&nbsp;</div>
+<div class="t4-section-inner container"><jdoc:include type="modules" name="section-3" style="T4Section" /></div>
 </div>
 
 <div id="t4-section-6" class="t4-section  t4-section-6  heading-left t4-section-inview">
 <div class="t4-section-inner container"><jdoc:include type="modules" name="section-6" style="T4Section" /></div>
 </div>
 
-<div id="t4-section-7" class="t4-section  t4-section-7  t4-section-inview  t4-palette-gray"><div class="bg-overlay bg-overlay-image">&nbsp;</div><div class="t4-row row">
-<div class="t4-col section-7 col-12 col-lg-6">
-<jdoc:include type="modules" name="section-7" style="T4Section" />
-</div>
-<div class="t4-col section-7-spacer col-12 col-lg-6 d-none d-sm-none d-md-block d-lg-block d-xl-block hidden-md">
-<jdoc:include type="modules" name="section-7-spacer" />
-</div>
-</div></div>
-
-<div id="t4-section-8" class="t4-section  t4-section-8  t4-section-inview   t4-palette-primary"><div class="bg-overlay bg-overlay-image">&nbsp;</div><div class="t4-row row">
-<div class="t4-col section-8-spacer col-12 col-lg-6 hidden-md">
-<jdoc:include type="modules" name="section-8-spacer" />
-</div>
-<div class="t4-col section-8 col-12 col-lg-6">
-<jdoc:include type="modules" name="section-8" style="T4Section" />
-</div>
-</div></div>
-
-<div id="t4-footer" class="t4-section  t4-footer  t4-section-inview  t4-palette-dark">
-<div class="t4-section-inner container"><div class="t4-row row">
-<div class="t4-col footer col-sm col-md-7">
-<jdoc:include type="modules" name="footer" style="raw" />
-</div>
-<div class="t4-col spacer col-sm hidden-md">
-<jdoc:include type="modules" name="spacer" />
-</div>
-</div></div>
+<div id="t4-section-5" class="t4-section  t4-section-5  container-md heading-center t4-section-inview  t4-palette-transparent"><div class="bg-overlay bg-overlay-image">&nbsp;</div>
+<div class="t4-section-inner container"><jdoc:include type="modules" name="section-5" style="T4Section" /></div>
 </div>
 
 <div id="t4-footnav" class="t4-section  t4-footnav  t4-palette-dark">

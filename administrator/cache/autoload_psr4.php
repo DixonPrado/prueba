@@ -118,4 +118,8 @@ return [
 	'Joomla\\Plugin\\User\\Profile\\' => [JPATH_PLUGINS . '/user/profile/src'],
 	'Joomla\\Plugin\\User\\Terms\\' => [JPATH_PLUGINS . '/user/terms/src'],
 	'Joomla\\Plugin\\User\\Token\\' => [JPATH_PLUGINS . '/user/token/src'],
+	'RegularLabs\\Library\\' => [JPATH_LIBRARIES . '/regularlabs/src'],
+	'RegularLabs\\Plugin\\EditorButton\\Sourcerer\\' => [JPATH_PLUGINS . '/editors-xtd/sourcerer/src'],
+	'RegularLabs\\Plugin\\System\\RegularLabs\\' => [JPATH_PLUGINS . '/system/regularlabs/src'],
+	'RegularLabs\\Plugin\\System\\Sourcerer\\' => [JPATH_PLUGINS . '/system/sourcerer/src'],
 ];

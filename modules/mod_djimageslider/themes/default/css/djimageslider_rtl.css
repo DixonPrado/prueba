@@ -1,0 +1,12 @@
+/* RTL slider styles */
+.djslider-default {
+	direction: rtl;
+}
+.djslider-default ul.djslider-in > li {
+	float: right;
+}
+.slide-desc-text-default {
+	text-align: right;
+}
+
+.djslider-default ul.djslider-in { height: 100% }

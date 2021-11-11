@@ -1,0 +1,507 @@
+/**
+ * [Copyright Regular Labs]
+ */
+
+@import "_variables.scss";
+@import "_icons.scss";
+
+/*
+ * Regular Labs specific styles
+ */
+
+.rl-flex {
+	display: flex;
+
+	.rl-flex > {
+		flex: 1;
+	}
+}
+
+.rl-mr-1 {
+	margin-right: 0.25rem;
+}
+
+.rl-w-5em {
+	max-width: 100%;
+	width:     5em;
+}
+
+.rl-w-6em {
+	max-width: 100%;
+	width:     6em;
+}
+
+.rl-w-7em {
+	max-width: 100%;
+	width:     7em;
+}
+
+.rl-w-8em {
+	max-width: 100%;
+	width:     8em;
+}
+
+.rl-w-9em {
+	max-width: 100%;
+	width:     9em;
+}
+
+.rl-w-10em {
+	max-width: 100%;
+	width:     10em;
+}
+
+.rl-w-12em {
+	max-width: 100%;
+	width:     12em;
+}
+
+.rl-w-16em {
+	max-width: 100%;
+	width:     16em;
+}
+
+.rl-w-20em {
+	max-width: 100%;
+	width:     20em;
+}
+
+.rl-w-24em {
+	max-width: 100%;
+	width:     24em;
+}
+
+.rl-license,
+.rl-footer {
+	margin-top: 30px;
+	text-align: center;
+
+	div {
+		margin-top: .5em;
+	}
+
+	a,
+	a[target=_blank] {
+		&:before {
+			content:      "";
+			margin-right: 0;
+		}
+	}
+}
+
+.rl-footer {
+	.rl-footer-review {
+		margin-top: 5px;
+
+		a.stars {
+			display: inline-block;
+
+			.icon-star {
+				color:               $yellow;
+				margin:              0;
+				transition-duration: 500ms;
+			}
+
+			&:hover {
+				text-decoration: none;
+
+				.icon-star {
+					transform: rotate(216deg);
+				}
+			}
+		}
+	}
+
+	.rl-footer-copyright {
+		font-size:  0.7em;
+		margin-top: 3px;
+		opacity:    .6;
+	}
+}
+
+.rl-code {
+	background-color: var(--atum-bg-dark-3);
+	border:           1px solid var(--atum-bg-dark-10);
+	border-radius:    .25rem;
+	color:            var(--alert-success);
+	font-family:      $font-family-monospace;
+	font-size:        .875rem;
+	font-weight:      400;
+	line-height:      1.5;
+	vertical-align:   baseline;
+	white-space:      nowrap;
+	display:          inline-block;
+	padding:          .1rem .1rem;
+
+	&.rl-code-block {
+		max-width:  100%;
+		padding:    .25rem .5rem;
+		overflow-x: auto;
+	}
+}
+
+.rl-form {
+	.control-group {
+		.form-select {
+			padding-right: 0;
+		}
+	}
+
+	.form-control {
+		padding: 0.5rem;
+	}
+
+	select.form-control {
+		padding: 0;
+
+		option {
+			padding: 0.25rem 0.5rem;
+		}
+	}
+
+	.options-form {
+		legend {
+			margin-bottom: 0.25rem;
+		}
+	}
+
+	&.labels-sm {
+		.control-label {
+			width: 150px;
+		}
+	}
+}
+
+input.rl-code-field {
+	&.form-control {
+		font-family: $font-family-monospace;
+
+		&.inactive {
+			font-weight:      700;
+			color:            $gray-600;
+			background-color: $gray-100;
+			border-color:     $gray-200;
+		}
+
+		&::-webkit-input-placeholder {
+			opacity: 1;
+			color:   $gray-400;
+		}
+
+		&:-ms-input-placeholder {
+			opacity: 1;
+			color:   $gray-400;
+		}
+
+		::placeholder {
+			opacity: 1;
+			color:   $gray-400;
+		}
+	}
+}
+
+.rl-admin-popover-container {
+	display:  none;
+	position: relative;
+
+	&.show {
+		display: block;
+	}
+}
+
+.rl-admin-popover {
+	background:    $white;
+	border:        1px solid $gray-500;
+	border-radius: 0.3rem;
+	box-shadow:    0 0 40px 10px rgba(0, 28, 73, .15);
+	color:         $gray-800;
+
+	font-size:     1rem;
+	left:          0;
+
+	margin:        .25em;
+
+	max-width:     100%;
+	padding:       0.5rem 1rem;
+	position:      absolute;
+
+	top:           0;
+	z-index:       1060;
+
+	.form-vertical & {
+		margin-top: -.25em;
+	}
+}
+
+.rl-panel {
+	border:            1px solid $info-bg;
+	border-left-width: .6rem;
+	border-radius:     .3rem;
+	margin:            1rem 0;
+	padding:           1rem;
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&.rl-panel-success {
+		border-color: $success-bg;
+	}
+
+	&.rl-panel-warning {
+		border-color: $warning-bg;
+	}
+
+	&.rl-panel-error {
+		border-color: $danger-bg;
+	}
+}
+
+.rl-alert.alert {
+	&.alert-info {
+		background-color: $blue;
+		border:           1px solid $blue;
+		color:            $white;
+	}
+
+	&.rl-alert-light {
+		&.alert-info {
+			background-color: lighten($blue, 50%);
+			border:           2px solid $blue;
+			color:            $black;
+		}
+
+		&.alert-success {
+			background-color: lighten($green, 60%);
+			border:           2px solid $green;
+			color:            $black;
+		}
+
+		&.alert-warning {
+			background-color: lighten($yellow, 43%);
+			border:           2px solid $yellow;
+			color:            $black;
+		}
+
+		&.alert-error {
+			background-color: lighten($red, 50%);
+			border:           2px solid $red;
+			color:            $black;
+		}
+	}
+}
+
+.rl-badge.badge {
+	&.bg-info {
+		background-color: $blue !important;
+		color:            $white;
+	}
+
+	&.bg-warning {
+		background-color: $yellow !important;
+		color:            $white;
+	}
+}
+
+.rl-treeselect {
+	.card-body {
+		max-height: 500px;
+		overflow-y: auto;
+	}
+
+	.treeselect .dropdown-toggle::after {
+		font-size:      1.1rem;
+		vertical-align: middle;
+	}
+
+	.dropdown-header {
+		border-bottom:  1px solid rgba(0, 0, 0, 0.15);
+		padding:        .75rem;
+		text-transform: uppercase;
+	}
+
+	.dropdown-item {
+		border-bottom: none;
+		line-height:   1rem;
+		padding:       .75rem;
+	}
+}
+
+.rl-btn-group.btn-group {
+	&.radio > .btn-check {
+		+ .btn {
+			opacity: 0.5;
+		}
+
+		+ .btn:hover,
+		&:checked + .btn {
+			opacity: 1;
+		}
+
+		&[disabled] + .btn,
+		&:disabled + .btn {
+			background-color: $gray-300;
+			opacity:          0.4;
+		}
+	}
+
+	&.rl-btn-group-separate {
+		display: block;
+
+		> .btn {
+			border-radius: 0.2rem !important;
+		}
+
+		&.radio > .btn-check {
+			+ .btn {
+				opacity: 0.7;
+			}
+
+			+ .btn:hover,
+			&:checked + .btn {
+				opacity: 1;
+			}
+
+			&[disabled] + .btn,
+			&:disabled + .btn {
+				opacity: 0.4;
+			}
+		}
+	}
+}
+
+.rl-modal .btn-group > .btn {
+	line-height: 1.5;
+	margin:      0;
+	padding:     0.6rem 1rem;
+}
+
+.control-group > div > .rl-alert {
+	&:first-child {
+		margin-top: 0;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.rl-form-check-not-inline .form-check-inline {
+	display: block;
+}
+
+.rl-button-no-text {
+	&.header-item-content {
+		-webkit-padding-end: 0;
+		padding-inline-end:  0;
+	}
+
+	.subhead joomla-toolbar-button &.btn > span {
+		-webkit-margin-end: 0;
+		margin-inline-end:  0;
+	}
+}
+
+.rl-card {
+	.card-body:not(:first-child) {
+		padding-top: 0;
+	}
+
+	.rl-card-button {
+		order:                1;
+		-webkit-margin-start: auto;
+		margin-inline-start:  auto;
+
+		> * {
+			margin-top: -10px;
+		}
+	}
+}
+
+.rl-spinner {
+	position:            absolute;
+	animation:           rl-spinner 1.2s infinite linear;
+	border:              3px solid $rl-gray-500;
+	border-top-color:    $rl-green-500;
+	border-right-color:  $rl-yellow-500;
+	border-bottom-color: $rl-red-500;
+	border-left-color:   $rl-blue-500;
+	border-radius:       50%;
+	margin:              0 auto;
+	left:                0;
+	right:               0;
+	height:              18px;
+	width:               18px;
+	top:                 calc(50% - 9px);
+
+	&.rl-spinner-lg {
+		border-width: 4px;
+		height:       24px;
+		width:        24px;
+		top:          calc(50% - 12px);
+	}
+}
+
+@keyframes rl-spinner {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/*
+ * Global extra styles
+ */
+
+.btn-md, .btn-group-md > .btn {
+	font-size: 0.9rem;
+	padding:   0.3rem 0.6rem;
+}
+
+/*
+ * Joomla core style overrides
+ */
+
+// Makes label be full width when using form-vertical for instance
+.control-group > div {
+	width: 100%;
+}
+
+.form-vertical .control-group .control-label {
+	width: auto;
+}
+
+.control-group .form-select {
+	padding-right: 3.5rem;
+}
+
+joomla-field-subform .icon-info-circle {
+	color:     var(--atum-text-dark) !important;
+	font-size: 0.8571rem !important;
+	opacity:   0.7;
+}
+
+joomla-field-subform.hide-main-buttons > .btn-toolbar {
+	display: none;
+}
+
+.text-left,
+.btn.text-left {
+	text-align: left;
+}
+
+.text-right,
+.btn.text-right {
+	text-align: right;
+}
+
+.display-block:not(.hidden) {
+	display: block;
+}
+
